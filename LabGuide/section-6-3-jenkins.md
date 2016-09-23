@@ -53,7 +53,7 @@ In the network world, we can use it to automatic push network configuration to n
 
 ### Exercise-3
 #### Login into Jenkins Server
-6. Open up a chrome browser and login in.
+6. Open up a chrome browser and login in. Use the ip you got in exercise 2.
 7. `http://<ip>:8080`
 8. type in the admin password that you copied previously.
 
@@ -66,11 +66,13 @@ In the network world, we can use it to automatic push network configuration to n
 
 	![jenkins](/images/jenkins-13.png)
 
-12. Create a user account (<yourid>/cisco123)
+12. Click on `Install`
+13. Create a user account (yourid/cisco123)
 
 	![jenkins](/images/jenkins-201.png)
 
-13. Click next and then `start using jenkins`
+14. Click `Save and Finish`
+15. Click on `Start using Jenkins`
 
 
 ### Exercise-4
@@ -91,7 +93,7 @@ We need gitlab plugin for now.  Lets install them.
 
 	![jenkins](/images/jenkins-16.png)
 
-5. Click on `Install without restart`
+5. Click on `Install without restart`.  Note it will automatically install all other required plugins.
 
 	![jenkins](/images/jenkins-17.png)
 
