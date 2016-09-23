@@ -121,7 +121,7 @@ Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON fo
 
 	![jenkins](/images/gitlab-305.png)
 
-5. Switch back to the `jenkins` tab on your browser.  Fill in the `Source Code Management Form` as shown in the screen below.
+5. Switch back to the `jenkins` tab on your browser.  Fill in the `Source Code Management Form` as shown in the screen below. Make sure you have set to `branch to build`  to `master`  branch.
 
 	![jenkins](/images/jenkins-304.png)
 
