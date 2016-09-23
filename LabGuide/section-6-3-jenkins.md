@@ -102,8 +102,8 @@ We need gitlab plugin for now.  Lets install them.
 8. It should take couple of mins to restart.
 
 ### Exercise-5
-#### Creating a job
-Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON format and uses them to configure Jenkins. You can keep your job descriptions in human readable text format in a version control system to make changes and auditing easier
+#### Creating a jenkins job
+Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON format and uses them to configure Jenkins. You can keep your job descriptions in human readable text format in a version control system to make changes and auditing easier.
 
 1. Click on `Create new Job`
 
@@ -115,17 +115,21 @@ Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON fo
 
 	![jenkins](/images/jenkins-jobs-2.png)
 
-5. Switch to your gitlab tab on the browser.  
+5. Switch to your `gitlab` tab on the browser.  
 	1. Click on the `Project`
 	2. copy the url for the `ansible` project.
 
 	![jenkins](/images/gitlab-305.png)
 
-5. Switch back to the jenkins tab.  Fill in the `Source Code Management Form`.
+6. Switch back to the `jenkins` tab on your browser.  Fill in the `Source Code Management Form` as shown in the screen below.
 
 	![jenkins](/images/jenkins-400.png)
 
-7. Set the trigger for the build job.
+7. Make sure to create a `Credentials` for your git login.  Click on `add` and select `jenkins`
+
+   ![jenkins](/images/jenkins-300.png)
+
+8.  the trigger for the build job.
 
 	![jenkins](/images/jenkins-401.png)
 
