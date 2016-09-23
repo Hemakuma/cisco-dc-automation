@@ -162,6 +162,7 @@ You can read more about Inventory file here:  Inventory http://docs.ansible.com/
         host: "{{ inventory_hostname }}"
         username:   admin
         password:   cisco123
+        transport:  nxapi
     ```
 4. Save the file `cmd + S`
 
