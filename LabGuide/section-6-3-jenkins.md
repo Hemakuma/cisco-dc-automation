@@ -167,8 +167,8 @@ Note: jenkins will fetch the repo and store the contents  under `/var/jenkins_ho
    ![jenkins](/images/jenkins-jobs-9.png)
 
 10. Copy the CI integration url so that we can create a webhook in gitlab
-	1. Click on the `deploy-prod` job
-	2. click on the `Configure`
+	1. Click on the `deploy-prod` job. Its on the top left corner.
+	2. click on the `Configure`.
 	3. go down to the `Build Triggers` section
 	4. copy the CI service url
 
@@ -177,7 +177,7 @@ We will use this information in the next exercise.
 
 ### Exercise-6
 #### Configure the webhook on the gitlab.
-If you like the gitlab notify Jenkins that something has changed in the repo and go deploy it again, you need to configure something called webhook.
+If you like the gitlab to notify Jenkins that something has changed in the repo and go redeploy it again, you need to configure something called webhook.
 
 1. Switch to back to the `gitlab` tab.
 2. Go to `ansible` project
@@ -189,13 +189,22 @@ If you like the gitlab notify Jenkins that something has changed in the repo and
 	![jenkins](/images/jenkins-405.png)
 5. Click on `Add Webhook`
 
-6. Click on `Test`.  Make sure you get success.
+6. Click on `Test`.  Make sure you get `HTTP 200` success message. The message will be shown at the top.
 
 ### Exercise-6
 #### Test the automate deployment
-Go into your ansible folder and change something.
-Push the configuration to gitlab.
-Watch the jenkins server and see how it will automatically deploy
+1. Switch back to `ATOM` editor
+2. add new ntp server to your switches.
+3. Go to `ansible --> roles --> baseconfig --> vars`
+4. open the `main.yml`
+5. Edit the file to add a new ntp server `199.1.5.2`
+6. Save the file `CMD + S`
+7. Make sure you have your `jenkins` tab open in the browser before you execute the next step. You want to watch what happens when you push your changes to the gitlab.  Basically, as soon as you push the changes to gitlab, it will trigger a webhook call to jenkins.  When the jenkins gets that call, it will start the deployment process. During this process it will download the latest copy of the repo and then run the `deploy-baseconfig.yml` playbook.
+8. In the atom window, go to `Packages` and select `GIT-Plus`. Then select `Add All + commit + push`
+9. It will ask you to enter your commit message. Type `added new ntp server 199.1.5.2` and then press `CMD + S` to save it.  
+10. This will trigger the push to the gitlab.
+11. Switch to the browser and go to jenkins tab.  Watch the automatic deploy process.
+12. This will what devops is all about.
 
 
 ### Troubleshooting
