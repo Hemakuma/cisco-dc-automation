@@ -47,7 +47,7 @@ In the network world, we can use it to automatic push network configuration to n
 #### Getting Jenkins login password
 1. Get the admin password
 	3. type
-   4. `docker exec -it jenkins  cat /var/jenkins_home/secrets/initialAdminPassword `
+   4. `docker exec -it jenkins-ansible  cat /var/jenkins_home/secrets/initialAdminPassword `
 	5. copy the password
 	5. type `docker-machine ip default` and note down the ip address of the docker host.  
 
