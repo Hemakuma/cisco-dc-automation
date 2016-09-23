@@ -156,7 +156,10 @@ Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON fo
 
 	```
 Note: jenkins will fetch the repo and store the contents  under `/var/jenkins_home/workspace/deploy-prod/` directory.
-
+10. Repeat step 9 above to play rest of the ansible playbooks.
+   1. click on the `Add build step` again.
+   2. copy paste the same content as above but this time change th ansible playboot to point to `deploy-hostports`
+   3. Repeat for `deploy-vlans`
 10. Click on `Save`
 11. Click on `Build Now`
 
@@ -207,6 +210,34 @@ If you like the gitlab to notify Jenkins that something has changed in the repo 
 12. Go to `Console Output`.  Make sure it did all the changes successfully.
 13. Switch to the switch console and type `sh run | sec ntp` . Do you see new ntp server added.
 12. This will what devops is all about.
+
+### Exercise 7
+#### Branch Merge will trigger Jenkins  deploy
+1. Switch to terminal window
+   2. make sure you are in the `ansible` directory
+   3. type
+   4. `git branch`
+   5. `git branch updatebase`
+   6. `git checkout updatebase`
+2. Switch back to `ATOM` editor
+   1. navigate to `ansible --> roles --> baseconfig --> vars`
+   2. open the `main.yml`
+   3. add a new ntp server `1.1.1.1`
+   4. `CMD + S ` to save it.
+3. Switch to the chrome browser and open the `Jenkins` tab. Login in if you are logged out. Make sure you are on `deploy-prod` job.
+4. Now we going to push the changes to the git.  This time, Jenkins job should be trigger since we put a filter that it should only trigger `deploy-prod` job only on the changes of the `master` branch.
+5. Switch to the terminal window
+   6. `./gitpush.sh`
+6. Did Jenkins build the job?
+7. Now login to `gitlab` portal.
+   8. you should see button for `Create Merge Request`.  Click on it.
+   9. enter the description for the merge.
+   10. assign it to yourself.
+   11. click on th `Submit merge request`
+   12. In the next screen click on `Accept Merge Request`
+   13. Switch to `Jenkins` tab.
+   14. Did the `deploy-prod` job got deployed?
+
 
 
 ### Troubleshooting
