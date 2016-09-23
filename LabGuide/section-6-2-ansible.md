@@ -221,7 +221,7 @@ http://docs.ansible.com/ansible/faq.html
     1. insid the ansible container type
     2. `vim /etc/hosts`
     3. press `i` to insert text
-    4. add a new entry to reflect all your hosts
+       4. add a new entry to reflect all your hosts. you just need to add entries for you switch eg. `172.16.123.135  n9k-1`.  Do not change or delete any other entries.
 
         ![hosts](/images/ansible-300.png)
     5. Save the file ...`esc`  then type `:wq`
