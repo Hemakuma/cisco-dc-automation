@@ -129,7 +129,9 @@ Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON fo
 
    ![jenkins](/images/jenkins-300.png)
 
-8.  the trigger for the build job.
+8.  Make sure you select the newly created credentials for your repository.  Credentials section should show your new credential.
+
+9. Create the trigger for the build job.
 
 	![jenkins](/images/jenkins-401.png)
 
