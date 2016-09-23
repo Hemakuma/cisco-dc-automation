@@ -133,7 +133,7 @@ Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON fo
 
    ![jenkins](/images/jenkins-301.png)
 
-9. Create the trigger for the build job.
+9. Click on the `Build Trigger` tab.
 
 	![jenkins](/images/jenkins-401.png)
 
