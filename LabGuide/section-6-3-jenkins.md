@@ -99,6 +99,7 @@ We need gitlab plugin for now.  Lets install them.
 
 6. Once install, you need to restart your server. Check the `restart box` at the end of the screen or
 7. On the url of the browser type `http://<ip>:8080/restart`
+8. It should take couple of mins to restart.
 
 ### Exercise-5
 #### Creating a job
