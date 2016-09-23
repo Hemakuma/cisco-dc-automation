@@ -250,21 +250,22 @@ use nxos_facts module .  https://docs.ansible.com/ansible/nxos_facts_module.html
 3. name it `ex-show-facts.yml`
 4. copy and past the following :
 
-    ```
-    ---
-    - name: get facts
-      hosts:n9k-1
-      connection: local
-      gather_facts: no
-      tasks:
-        - name: obtain login credentials
-          include_vars: credentials.yml
+   ```
+   ---
+   - name: get facts
+     hosts: leafs
+     connection: local
+     gather_facts: no
+     tasks:
+       - name: obtain login credentials
+         include_vars: credentials.yml
 
-        - name: get switch facts
-          nxos_facts:
+       - name: get switch facts
+         nxos_facts:
+           provider: "{{ creds }}"
 
-        - template: src=templates/facts.j2 dest=files/{{ inventory_hostname }}_facts.json
-    ```
+       - template: src=templates/facts.j2 dest=files/{{ inventory_hostname }}_facts.json
+   ```
 
 5. Save the file `CMD + S`
 6. create jinja2 template to store the data
