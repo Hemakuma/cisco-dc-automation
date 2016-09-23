@@ -108,36 +108,36 @@ Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON fo
 1. Click on `Create new Job`
 
  	![jenkins](/images/jenkins-jobs-1.png)
-3. Name the job `deploy-prod`
-4. use `free style project`
+2. Name the job `deploy-prod`
+3. use `free style project`
 
 	Freestyle project: This provides the ability to create a completely custom job that can behave in any way we choose.
 
 	![jenkins](/images/jenkins-jobs-2.png)
 
-5. Switch to your `gitlab` tab on the browser.  
+4. Switch to your `gitlab` tab on the browser.  
 	1. Click on the `Project`
 	2. copy the url for the `ansible` project.
 
 	![jenkins](/images/gitlab-305.png)
 
-6. Switch back to the `jenkins` tab on your browser.  Fill in the `Source Code Management Form` as shown in the screen below.
+5. Switch back to the `jenkins` tab on your browser.  Fill in the `Source Code Management Form` as shown in the screen below.
 
-	![jenkins](/images/jenkins-400.png)
+	![jenkins](/images/jenkins-304.png)
 
-7. Make sure to create a `Credentials` for your git login.  Click on `add` and select `jenkins`
+6. Make sure to create a `Credentials` for your git login.  Click on `add` and select `jenkins`
 
    ![jenkins](/images/jenkins-300.png)
 
-8.  Make sure you select the newly created credentials for your repository.  Credentials section should show your new credential.
+7.  Make sure you select the newly created credentials for your repository.  Credentials section should show your new credential.
 
    ![jenkins](/images/jenkins-301.png)
 
-9. Click on the `Build Trigger` tab and fill in the form as shown below.
+8. Click on the `Build Trigger` tab and fill in the form as shown below.
 
 	![jenkins](/images/jenkins-401.png)
 
-6. Click on the `Build` tab. Add a `Execute Shell` task. Run a shell script to run the ansible playbook.
+9. Click on the `Build` tab. Add a `Execute Shell` task. Run a shell script to run the ansible playbook.
 
    ![jenkins](/images/jenkins-302.png)
 
@@ -157,16 +157,16 @@ Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON fo
 	```
 Note: jenkins will fetch the repo and store the contents  under `/var/jenkins_home/workspace/deploy-prod/` directory.
 
-8. Click on `Save`
-8. Click on `Build Now`
+10. Click on `Save`
+11. Click on `Build Now`
 
  ![jenkins](/images/jenkins-jobs-10.png)
 
-9. Take a look at the console output.  Click on the `build #` and select `Console Output` in the next screen.
+12. Take a look at the console output.  Click on the `build #` and select `Console Output` in the next screen.
 
    ![jenkins](/images/jenkins-jobs-9.png)
 
-10. Copy the CI integration url so that we can create a webhook in gitlab
+13. Copy the CI integration url so that we can create a webhook in gitlab
 	1. Click on the `deploy-prod` job. Its on the top left corner.
 	2. click on the `Configure`.
 	3. go down to the `Build Triggers` section
