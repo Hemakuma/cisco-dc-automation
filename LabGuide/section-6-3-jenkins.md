@@ -23,31 +23,33 @@ Jenkins
 
 <!-- /MDTOC -->
 
-
 Introduction
 -----
 Jenkins is an open source tool that is used for scheduling and running automated tests and deployment.  It is essentially the friendly butler of automation who will handle all of your automation tasks for you once you tell him to do so and he only needs to be told once.
 
 In the Server world, Jenkins can be used to perform the typical build server work, such as doing continuous/official/nightly builds, run tests, or perform some repetitive batch tasks.
 
+In the network world, we can use it to automatic push network configuration to network devices. This is little known application of Jenkins but we will be explore little bit deeper how we can use Jenkins to help with network automation.
+
 ### Exercise-1
 #### Update the hosts file
 1. Open another terminal window and navigate to training folder
 2. source `source source.docker`
 3. Find out the ip address of your `nxosv` switch.  you can login into the switch and type `show ip int brief vrf  management`.  Note down the ip.
-4. Update the hosts files on the jenkins server  since we are not using dns
+4. Update the `/etc/hosts` files on the jenkins server  since we are not using dns. This will allow jenkins server to be able to resolve the names of our switches that are referenced inside the ansible playbook
 5. type
 
-	`docker exec -it jenkins /bin/sh -c "echo 172.16.123.135 n9k-1 > /etc/hosts"`
+	`docker exec -it jenkins-ansible /bin/sh -c "echo 172.16.123.135 n9k-1 > /etc/hosts"`
 
-6. repeat this for all the switches you have.
+6. Repeat this for all the switches you have.
 
 ### Exercise-2
 #### Getting Jenkins login password
 1. Get the admin password
-	3. type `docker exec -it jenkins  cat /var/jenkins_home/secrets/initialAdminPassword `
-	4. copy the password
-	5. type `docker-machine ip default` and note down the ip address of the docker host
+	3. type
+   4. `docker exec -it jenkins  cat /var/jenkins_home/secrets/initialAdminPassword `
+	5. copy the password
+	5. type `docker-machine ip default` and note down the ip address of the docker host.  
 
 ### Exercise-3
 #### Login into Jenkins Server
