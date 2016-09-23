@@ -151,7 +151,7 @@ Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON fo
 	# http://www.ansibleworks.com/docs/gettingstarted.html#a-note-about-host-key-checking
 	export ANSIBLE_HOST_KEY_CHECKING=False
 	pushd /var/jenkins_home/workspace/deploy-prod/
-	    ansible-playbook -i hosts r-baseconfig.yml
+	    ansible-playbook -i hosts deploy-baseconfig.yml
 	popd
 
 	```
@@ -163,8 +163,8 @@ Note: jenkins will fetch the repo and store the contents  under `/var/jenkins_ho
  ![jenkins](/images/jenkins-jobs-10.png)
 
 9. Take a look at the console output.  Click on the build and select `Console Output`
-
- ![jenkins](/images/jenkins-jobs-9.png)
+   ![jenkins](/images/jenkins-303.png)
+   ![jenkins](/images/jenkins-jobs-9.png)
 
 10. Copy the CI integration url so that we can create a webhook in gitlab
 	1. Click on the `deploy-prod` job
