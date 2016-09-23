@@ -204,6 +204,8 @@ If you like the gitlab to notify Jenkins that something has changed in the repo 
 9. It will ask you to enter your commit message. Type `added new ntp server 199.1.5.2` and then press `CMD + S` to save it.  
 10. This will trigger the push to the gitlab.
 11. Switch to the browser and go to jenkins tab.  Watch the automatic deploy process.
+12. Go to `Console Output`.  Make sure it did all the changes successfully.
+13. Switch to the switch console and type `sh run | sec ntp` . Do you see new ntp server added.
 12. This will what devops is all about.
 
 
