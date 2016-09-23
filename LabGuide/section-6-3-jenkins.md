@@ -133,11 +133,13 @@ Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON fo
 
    ![jenkins](/images/jenkins-301.png)
 
-9. Click on the `Build Trigger` tab.
+9. Click on the `Build Trigger` tab and fill in the form as shown below.
 
 	![jenkins](/images/jenkins-401.png)
 
-6. Run a shell script to run the ansible playbook.
+6. Click on the `Build` tab. Add a `Execute Shell` task. Run a shell script to run the ansible playbook.
+
+   ![jenkins](/images/jenkins-301.png)
 
 	![jenkins](/images/jenkins-402.png)
 
