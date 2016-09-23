@@ -1,3 +1,25 @@
+## Saving your configuration to git hub
+
+### Exercise 8
+#### Saving your Repository to github.
+1. Create a account on github.com
+2. create a repository called `training`.
+3. we will save all configuration to github. This way even if you delete it from your laptop, it will still be available online.
+4. now push your training repository to git hub.
+5. switch back to terminal window
+6. go to `training` folder.
+7. type the following.  change the url to match your repository and username.
+```
+git init
+git remote add origin https://hemakuma@github.com/Hemakuma/training.git
+git add .
+git commit -m `saving training material on github`
+git push -u origin master
+```
+8. Now for the lab, we will be using our locally installed gitlab server.  Once we have finished with the lab, we will push everything to github.  This will be your reference for later on.
+
+
+
 
 ##Manual way of creating containers
 

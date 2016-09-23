@@ -143,7 +143,7 @@ Inventory file contains list of hosts that you want to manage from Ansible.  In 
     ```
 4. Delete all the host from the above file , except for the switch that is assigned to you.  Your host file should be similar to the picture below.
 
-    ![ansibel-1](/images/ansible-2.png)
+    ![ansibel-1](/images/hosts-10.png)
 
 5. We are using  ansible connection as local rather than ssh, because the nxos ansible modules use nxapi to configure the switches rather than ssh.
 6. Save the file `CMD + S`
