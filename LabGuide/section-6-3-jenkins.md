@@ -139,7 +139,7 @@ Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON fo
 
 6. Click on the `Build` tab. Add a `Execute Shell` task. Run a shell script to run the ansible playbook.
 
-   ![jenkins](/images/jenkins-301.png)
+   ![jenkins](/images/jenkins-302.png)
 
 	![jenkins](/images/jenkins-402.png)
 
