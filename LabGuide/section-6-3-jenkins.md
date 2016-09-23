@@ -162,8 +162,8 @@ Note: jenkins will fetch the repo and store the contents  under `/var/jenkins_ho
 
  ![jenkins](/images/jenkins-jobs-10.png)
 
-9. Take a look at the console output.  Click on the build and select `Console Output`
-   ![jenkins](/images/jenkins-303.png)
+9. Take a look at the console output.  Click on the `build #` and select `Console Output` in the next screen.
+
    ![jenkins](/images/jenkins-jobs-9.png)
 
 10. Copy the CI integration url so that we can create a webhook in gitlab
