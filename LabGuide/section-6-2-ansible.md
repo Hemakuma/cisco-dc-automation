@@ -116,10 +116,10 @@ http://docs.ansible.com/ansible/list_of_network_modules.html
 ### Exercise 1
 #### Setting up the directory structure to host ansible files
 1. Switch to `ATOM` Editor
-2. Right click on the `ansible` folder
-3. Select new folder
-4. name it `roles`
-5. Repeat above and create following folders.
+   1. Right click on the `ansible` folder
+   2. Select new folder
+   3. name it `roles`
+2. Repeat above and create following folders.
     1. templates
     2. groups_vars
     3. hosts_vars
