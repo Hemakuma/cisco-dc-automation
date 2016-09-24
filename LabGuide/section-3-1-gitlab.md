@@ -13,7 +13,7 @@ Gitlab
       - [Exercise-3](#exercise-3)   
          - [Verify that file got uploaded to gitlab](#verify-that-file-got-uploaded-to-gitlab)   
       - [Exercise-4](#exercise-4)   
-         - [Scripting the git push](#scripting-the-git-push)   
+         - [Automating git push (gitpush.sh)](#automating-git-push-gitpushsh)   
       - [Exercise-5](#exercise-5)   
          - [Modifying the README file.](#modifying-the-readme-file)   
       - [Exercise-6](#exercise-6)   
@@ -44,8 +44,8 @@ Gitlab
       - [Exercise 6](#exercise-6)   
       - [Exercise 7](#exercise-7)   
          - [Remove the branch](#remove-the-branch)   
-      - [Summary Steps for creating a branch](#summary-steps-for-creating-a-branch)   
-      - [Some useful git command](#some-useful-git-command)   
+      - [Summary Steps for simple peer review using gitlab.](#summary-steps-for-simple-peer-review-using-gitlab)   
+   - [Some useful git command](#some-useful-git-command)   
 
 <!-- /MDTOC -->
 
