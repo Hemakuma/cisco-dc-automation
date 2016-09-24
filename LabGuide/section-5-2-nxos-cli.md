@@ -71,19 +71,20 @@ Its no fun just creating one vlan. We could do this faster with CLI.   Lets writ
 
 **Goal:** Create a script to ensure the required vlans are present all the switches you manage in your network.  This is a very common requirement for lots of customers.  They want to make sure all the switches have same vlans configured.
 
-1. In `ATOM` , right click on `nxtoolkit` and create `New File`. Name it `vlan-consist-check.py`  
-2. Get the code from git hub here
+1. Switch to  `ATOM` editor. 
+   1. Right click on `nxtoolkit` and create `New File`. Name it `vlan-consist-check.py`  
+   2. Get the code from git hub here
 
-    https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/vlan-consist-check.py
+       https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/vlan-consist-check.py
 
 
-3. copy and  paste the code in new file.  
-4. Modify the file to reflect your switch ip, username + password
+   3. copy and  paste the code in new file.  
+   4. Modify the file to reflect your switch ip, username + password
 
-    ![nxcli-1](/images/nxcli-4.png)
+       ![nxcli-1](/images/nxcli-4.png)
 
-5. Save the file `CMD + S` as `vlan-consist-check.py`  
-6. Read the code and try to make sense of it.  Keep doing this with all the scripts we write.  You will see a pattern on how the codes are written.  
+   5. Save the file `CMD + S` as `vlan-consist-check.py`  
+   6. Read the code and try to make sense of it.  Keep doing this with all the scripts we write.  You will see a pattern on how the codes are written.  
 7. Switch to nxtoolkit container terminal window and run this script.
    1. This script should be in your `myscript` folder.  
    2. run the script `python vlan-consist-check.py`  
