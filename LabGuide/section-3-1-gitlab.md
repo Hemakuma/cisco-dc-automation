@@ -308,7 +308,7 @@ A branch in Git is simply a lightweight movable pointer to one of these commits.
 6. `git commit -m  'updated readme file' ` to commit the file
 7. `git push -u origin readmeupdate` push the branch to gitlab
 
-Or you can use your `ATOM` if you have git-plus plugin.  `ctrl + shift + H`
+Or you can use your `ATOM` if you have git-plus plugin.  `ctrl + shift + H` and then select `Add All + commit + push`
 
 ### Exercise 4
 #### Create `Merge Request` on gitlab
@@ -326,7 +326,7 @@ Or you can use your `ATOM` if you have git-plus plugin.  `ctrl + shift + H`
 
 ### Exercise 5
 #### Merge the branch with master branch
-1. Log out of gitlab accounts
+1. Log out of gitlab accounts. Logout button is at the top right corner.
 2. log back in using `developer`  account.
 3. Select `ansible` repository.
 4. Click on the menu button
@@ -369,16 +369,16 @@ Or you can use your `ATOM` if you have git-plus plugin.  `ctrl + shift + H`
 3. this should remove the branch.  We don't need it as we have merged our changes to the master (trunk)
 
 
-### Summary Steps for creating a branch
+### Summary Steps for simple peer review using gitlab.
 
 1. Clone project
 2. git clone git@example.com:project-name.git
 3. Create branch with your feature
-4. git checkout -b $feature_name
+4. `git checkout -b $feature_name`
 5. Write code. Commit changes
-6. git commit -am "My feature is ready"
+6. `git commit -am "My feature is ready"``
 7. Push your branch to GitLab
-8. git push origin $feature_name
+8. `git push origin $feature_name`
 9. Review your code on commits page
 10. Create a merge request
 11. Your team lead will review the code & merge it to the main branch
@@ -391,5 +391,7 @@ git log
 git config -l
 git status
 git show
+git remote -v
+git branch -v
 
 ```
