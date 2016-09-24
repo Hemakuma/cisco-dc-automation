@@ -117,8 +117,8 @@ You should not see vlan 300 in the RESPONSE window.  If you do see it, delete by
 4. Create a new request called `config-vlan` in the `NXOS-API` folder. Use the same method. Do `save as` on a exiting request.
 5. In the URL field , select `POST` and then type your object url.  It should look something like this `http://<switchip>/api/mo/sys/bd.json`
 6. Change the request type to be `POST`
-7. In the BODY of the POST Request type following JSON code.  
-https://github.com/Hemakuma/networkautomation/blob/master/configs/config-vlan.json
+7. In the BODY of the POST Request type following JSON code.
+https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/config-vlan.json
 7. Click `Save` to save the request.
 8. Send a POST request by pressing on the `Send` button.
 8. Verify the vlan is configured.
@@ -142,7 +142,7 @@ admin state = shutdown
 5. Create a New Request. Name it `Config-Phy-Int`.  Add it to the `NXOS-API` collection.
 6. In the URL field , select `POST` and then type your object url (see picture below).  It should look something like this `http://<switchip:>/api/mo/sys/intf/phys-[eth1/1].json`
 7. In the BODY of the POST Request type following JSON code.
-https://github.com/Hemakuma/networkautomation/blob/master/configs/config-phy-int.json
+https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/config-phy-int.json
 8. Save the request by click the `Save` button.
 
     ![postman](/images/postman-4-0.png)
