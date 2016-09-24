@@ -180,8 +180,9 @@ For the lab environment, we want to quickly push the changes to the remote repo 
 ## Creating `nxtoolkit` repository on gitlab.
 ### Exercise-1
 #### Create nxtoolkit project
-1. login to the gitlab using your own account.
-2. create a new `project`, name it `nxtoolkit`
+1. Switch back to your `Chrome browser`
+2. login to the gitlab using your own account.
+2. Create a new `project`, name it `nxtoolkit`.  See screen capture below.
 
     ![gitlab](/images/gitlab-507.png)
 
@@ -189,10 +190,9 @@ For the lab environment, we want to quickly push the changes to the remote repo 
 #### Putting nxtoolkit directory under git Repository
 1. Switch to the terminal window
 2. `pwd`  <-- make sure you are in the nxtoolkit directory
-  2. `cd training`
-  3. `cd nxtoolkit`
-  4. `touch README.md`
-3. Follow the instructions from the gitlab site to put our nxtoolkit directory under git version control.
+  1. ``cd ~/training/nxtoolkit``
+  2. `touch README.md`
+3. Follow the instructions from the gitlab site to put your `nxtoolkit` directory under git version control.
 4. Do not copy and paste everything at once.  Do line by line.
 5. For git commit command, use -m flag.  `git commit -m 'your message'`
 5. Modify the first line as follows. Add your username and password to the url ..hemakuma:cisco123@
@@ -200,7 +200,9 @@ For the lab environment, we want to quickly push the changes to the remote repo 
   `git remote add origin http://hemakuma:cisco123@192.168.99.100/hemakuma/nxtoolkit.git `
 
   ![gitlab](/images/gitlab-508.png)
-6. Switch to gitlab browser and verify that files have been uploaded.
+6. Switch to chrome browser and verify that files have been uploaded.
+  7. Refresh the browser page
+  8. Click on `Files`
 
 ---
 ## Creating gitlab users.
