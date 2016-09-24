@@ -117,7 +117,7 @@ https://github.com/datacenter/nxtoolkit/blob/master/nxtoolkit/nxphysobject.py
    12. `./hk-show-interfaces.py`
 13. Switch to  switch CLI terminal.
    1. shut some of the interfaces eg
-   
+
       ```
       config t
       int eth 1/4
@@ -197,17 +197,19 @@ description: "Configured by nxtoolkit"
 2. Looks like `nx-config-interface.py`  is close to our requirement.
 3. Lets make a copy of it and modify it.
 4. Switch to your nxtoolkit terminal
-5. `cp nx-config-interface.py hk-config-interface.py`
-5. Switch to `ATOM` window.  Double click `hk-config-interface.py` to edit it.
-6. Change the code to reflect your requirement.
+   1. `cp nx-config-interface.py hk-config-interface.py`
+5. Switch to `ATOM` window.  
+   1. Double click `hk-config-interface.py` to edit it.
+   2. Change the code to reflect your requirement.
 
-   HELP:  https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/hk-config-interface.py
-7. Save the file  `CMD+S`
-8. Switch to switch CLI terminal and to verify the current configuration before modifying it.
-`show run interface`
+      HELP:  https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/hk-config-interface.py
+   3. Save the file  `CMD+S`
+8. Switch to switch CLI terminal
+   1. verify the current configuration before modifying it.
+   `show run interface`
 9. Switch to nxtoolkit window
-10. Run the script from the nxtookit container.
-`./hk-config-interface.py`
+   1. Run the script from the nxtookit container.
+   `./hk-config-interface.py`
 11. Repeat step 8 and compare the result.
 
 **Reference**
@@ -248,8 +250,8 @@ Note: vlans should be already created by the script in exercise 6.
 1. Login to your nxtoolkit container
 2. `cp nx-config-svi.py hk-config-svi.py`
 3. Switch to  ATOM.
-3. Modify the file as per the requirement.  Hint: the code is at the end of the file. You have to uncomment it.
-4. Save the file
+   3. Modify the file as per the requirement.  Hint: the code is at the end of the file. You have to uncomment it.
+   4. Save the file
 5. Inside the nxtoolkit container, run this script.
 6. Verify on the switch that both of the vlans are configured.
 
