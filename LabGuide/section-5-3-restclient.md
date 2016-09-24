@@ -72,8 +72,8 @@ Lets create a REST request message to login into the nexus switch.  This will be
     ```
 
 8. Click on `Save arrow down` and select `save as`
-8. Save the request to the `NXOS-API` collection.
 9. Name it `NXOS-Login`
+10. Select `NXOS-API` collection.
 10. Click on `Save`
 10. Get you authentication token by clicking on the `Send` Button at the right side of the url. You should see your token in the RESPONSE Window
 
@@ -90,9 +90,10 @@ Create the json rest request to view the current configuration on eth1/1.  use G
 4. Name it `Get-Interface-Status`
 5. Select `NXOS-API` collection.
 6. Change the request to be of `GET` type
-4. Change the url will be `http://switch-ip/api/mo/sys/intf/phys-[eth1/1].json`
-7. Click on `Send`   Send button.
-7. Take note of the adminSt, accessVlan and descr from the Response window.  We are going to modify these attributes of this object in the next exercise.
+7. Change the url will be `http://switch-ip/api/mo/sys/intf/phys-[eth1/1].json`
+8. Click on `Save` to save the changes.
+9. Click on `Send`   Send button.
+10. Take note of the adminSt, accessVlan and descr from the Response window.  We are going to modify these attributes of this object in the next exercise.
 
     ![postman](/images/postman-3.png)  
 
