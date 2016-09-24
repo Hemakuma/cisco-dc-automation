@@ -102,8 +102,8 @@ For this lab, we have installed our own gitlab server on the docker container. W
 
   `git remote add origin http://hemakuma:cisco123@192.168.99.100/hemakuma/ansible.git`
 
-
   ![gitlab](/images/gitlab-505.png)
+7. type ` git config -l`  and verify all the information you typed in is in the configuration file.
 
 ### Exercise-3
 #### Verify that file got uploaded to gitlab
@@ -118,7 +118,7 @@ For this lab, we have installed our own gitlab server on the docker container. W
   ![gitlab](/images/gitlab-303.png)
 
 ### Exercise-4
-#### Scripting the git push
+#### Automating git push (gitpush.sh)
 For the lab environment, we want to quickly push the changes to the remote repo on the gitlab. In this exercise we going to create a script to automate this process.
 
 1. Switch to `ATOM` Editor
@@ -140,7 +140,7 @@ For the lab environment, we want to quickly push the changes to the remote repo 
 #### Modifying the README file.
 1. Open up the `README.md` file from the `ansible` folder using `ATOM`
 2. Add some contents to it eg `this is my second gitlab edit`
-3. Save it.
+3. Save it `CMD + S`.
 
 ### Exercise-6
 #### Push the Updated file to gitlab using script
@@ -148,7 +148,6 @@ For the lab environment, we want to quickly push the changes to the remote repo 
 2. you should be in the `ansible` directory  (`training/ansible`)
 3. make the gitpush.sh script executable.
 4. `chmod +x gitpush.sh`
-5. Now use it to push the `README.md` to gitlab.
 6. type
 7. `./gitpush.sh`
 
@@ -167,13 +166,14 @@ For the lab environment, we want to quickly push the changes to the remote repo 
 
 ### Exercise-8
 #### gitpush.sh script for nxtoolkit repository.
-1. Using `ATOM` copy the `gitpush.sh` file from `ansible` folder.
-2. Paste it in the `nxtoolkit` folder.
+1. Using `ATOM` copy the `gitpush.sh` file from `ansible` folder.  
+  1. Right click on the `gitpush.sh` and select copy.
+  2. Paste it in the `nxtoolkit` folder. Right click on the `nxtoolkit` folder and select paste.
 3. Switch back to the terminal window.
-2. you should be in the `nxtoolkit` directory  (`training/nxtoolkit`)
-3. make the gitpush.sh script executable.
-4. `chmod +x gitpush.sh`
-7. We will use this script in the next exercise
+  2. you should be in the `nxtoolkit` directory  (`cd ~/training/nxtoolkit`)
+  3. make the gitpush.sh script executable.
+  4. `chmod +x gitpush.sh`
+  7. We will use this script in the next exercise
 
 ----
 
