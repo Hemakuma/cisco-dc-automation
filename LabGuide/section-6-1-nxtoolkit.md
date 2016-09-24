@@ -43,7 +43,7 @@ All the python scripts requires switch login information (Credentials).  You can
 2. Close all the files that are open in ATOM to make space for nxtoolkit programming files.
 3. Make sure you see the `sample` folder under `nxtoolkit` folder. Expand this folder to see all the files. All your object based scripts are located in the this folder.  
 4. Right click on the `samples` folder under `nxtoolkit` folder and select `NEW File`. Name it `credentials.py`
-5. Copy and paste the following content in this file. **Make sure to change the `URL` to point to your  switch ip.**
+5. Copy and paste the following content in this file. **Make sure to change the `URL` and `password` to to reflect your environment.**
 https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/credentials.py
 6. Save the file. `CMD+S`
 7. close the file
@@ -65,19 +65,19 @@ https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/credentials.
 ### Exercise 3
 #### Running nxos show commands using nxtoolkit
 1. Inside nxtoolkit container, type the following.
-2. `cd myscripts`
-3. `cd samples`
-4. `ls  | grep show ` <-- to see all the show scripts
-5. Lets run the few of show interfaces scripts.
-6. Since all the files are executable, we can just run it without typing python. It will automatically associate it with python program.
-7. Type `./nx-show-interfaces.py`  to run  the script or you can type `python nx-show-interfaces.py`
-you don't need to pass any credentials as it is automatically read from the `credentials.py` file that you created.
+   2. `cd myscripts`
+   3. `cd samples`
+   4. `ls  | grep show ` <-- to see all the show scripts
+   5. Lets run the few of show interfaces scripts.
+   6. Since all the files are executable, we can just run it without typing python. It will automatically associate it with python program.
+   7. Type `./nx-show-interfaces.py`  to run  the script or you can type `python nx-show-interfaces.py`
+   you don't need to pass any credentials as it is automatically read from the `credentials.py` file that you created.
 
-   ![nxtoolkit](/images/nxtoolkit-30.png)
-8. Examine the output
+      ![nxtoolkit](/images/nxtoolkit-30.png)
+   8. Examine the output
 9. Switch to ATOM window
-10. Navigate to the samples folder and located the `nx-show-interfaces.py` file
-11. Look at the code and try to make sense of what is doing.  Open up the git hub documentation and read the `nxtoolkit.py`
+   10. Navigate to the samples folder and located the `nx-show-interfaces.py` file
+   11. Look at the code and try to make sense of what is doing.  Open up the git hub documentation and read the `nxtoolkit.py`
 
 Basically the script logins into the switches, uses `interface.get` function to get all the interfaces.  Then it puts the data inside a python list. This list contains tuples that contains interface attributes such as interface id, admin state, operation state et.   Then it displays the data from the dictionary using jinja2 template.
 If you have time, get a look at the what "interface class" module does..GitHub - datacenter/nxtoolkit
