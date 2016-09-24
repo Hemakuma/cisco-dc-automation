@@ -52,7 +52,10 @@ Gitlab
 
 ## Introduction
 GIT is a very popular and efficient open source Version Control System. It tracks content such as files and directories for changes. Files transition between 3 states, modified, staged and committed file.  Repository are local but if you want to share your codes with your team, you can also push it to remote/central repository.
-![GitHub](/images/git-intro-1.png)
+
+Note, Git doesn’t store data as a series of changesets or deltas, but instead as a series of snapshots.
+
+  ![GitHub](/images/git-intro-1.png)
 
 **Make sure you have git installed on your system.  See devops tools section.**
 
@@ -262,11 +265,13 @@ With git-plus plugin, you can manage git updates directly from ATOM.  In order t
   Add the path to git.  eg C:\Program Files\Git\bin
   ```
 
-*You want to this do way so that `ATOM` can track your git changes.  Each git repo should be a `atom project`*
 
 ----
 
 ## Working with Git Branch
+A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master. As you initially make commits, you're given a master branch that points to the last commit you made. Every time you commit, it moves forward automatically.
+
+![branch](/images/branch-10.png)
 
 ### Exercise 1
 #### Creating a git branch
