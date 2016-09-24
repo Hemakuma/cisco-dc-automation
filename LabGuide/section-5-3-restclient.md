@@ -153,6 +153,6 @@ https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/config-phy-i
 
 10. Now click on your `Get-interface-status`  request in the Postman window.  `Send`  this GET request  to the the switch and compare the results from exercise 2.
 
-    ![postman](/images/postman-4.png)  
+    ![postman](/images/postman-5.png)  
 
 11. Switch to your ssh terminal to the switch.  `do show interface ethernet 1/1`.
