@@ -36,7 +36,7 @@ DevOps Tools
 Introduction
 ---
 
-Most of the developers develop applications on their laptop.  They have most of the application development tools installed on their laptop. We will try to setup similar environment for you on your laptop. This way we can use these tool for today's lab and then you can have it on your laptop to continue your learning.  Lets install some of the tools:
+Most of the developers develop applications on their laptop.  They have most of the application development tools installed on their laptop. We will try to setup similar environment for you on your laptop. This way you can have tools on your laptop to continue your learning after this class.  Lets install some of the tools:
 
 ## Code Editor
 To write codes, you will need a good text editor that does syntax highlighting. Atom is excellent editor for editing  codes. It is opensource so there is no fee for it.  Any text editor with syntax highlight will do.

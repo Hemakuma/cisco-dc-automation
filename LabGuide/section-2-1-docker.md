@@ -107,7 +107,8 @@ Source file are used to set the environment variable to communicate to the docke
 3. Copy the content to the clipboard.
 4. Open the **Atom** Editor.
 5. Go to `File` menu and then select `New File`
-6. Paste the content here in the `training` folder as `source.docker`
+6. Paste the content in this file.
+7. Save the file in the `training` folder as `source.docker`
 
 	![atom100](/images/source-1.png)
 
