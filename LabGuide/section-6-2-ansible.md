@@ -113,6 +113,7 @@ http://docs.ansible.com/ansible/list_of_network_modules.html
 
 
 ## Section-6-2-1 : Ansible Setup
+
 ### Exercise 1
 #### Setting up the directory structure to host ansible files
 1. Switch to `ATOM` Editor.
