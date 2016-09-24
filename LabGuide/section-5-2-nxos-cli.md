@@ -71,7 +71,7 @@ Its no fun just creating one vlan. We could do this faster with CLI.   Lets writ
 
 **Goal:** Create a script to ensure the required vlans are present all the switches you manage in your network.  This is a very common requirement for lots of customers.  They want to make sure all the switches have same vlans configured.
 
-1. Switch to  `ATOM` editor. 
+1. Switch to  `ATOM` editor.
    1. Right click on `nxtoolkit` and create `New File`. Name it `vlan-consist-check.py`  
    2. Get the code from git hub here
 
@@ -113,6 +113,15 @@ You need to put the switch_ip file in the same directory as your script.
 Your output should look like this  
 
 ![nxcli-1](/images/nxcli-3.png)
+
+HELP:
+
+1. create a file called `show-version.py` in the nxtoolkit folder
+2. modify the switch login information .. username and password to match your environment.
+3. copy my code in this file and save it `Cmd + S`.
+4. create another file called `switch_ip`.  add all your switches to this list and save it.
+4. go to nxtoolkit terminal and run it.  
+5. `python show-version.py switch_ips`
 
 *Keep the nxtoolkit container, ATOM text editor and ssh  session  to switch  open all the time. We will be using all of them frequently.  Learn how to switch between them quickly to check and verify your configurations.*
 
