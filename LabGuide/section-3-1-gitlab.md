@@ -269,7 +269,7 @@ With git-plus plugin, you can manage git updates directly from ATOM.  In order t
 ----
 
 ## Working with Git Branch
-A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master. As you initially make commits, you're given a master branch that points to the last commit you made. Every time you commit, it moves forward automatically.
+A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master. As you initially make commits, you're given a master branch that points to the last commit you made. Every time you commit, it moves forward automatically.  Creating a new branch just adds a new point to the commit.
 
 ![branch](/images/branch-20.png)
 
