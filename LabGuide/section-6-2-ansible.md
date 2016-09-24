@@ -117,23 +117,25 @@ http://docs.ansible.com/ansible/list_of_network_modules.html
 ### Exercise 1
 #### Setting up the directory structure to host ansible files
 1. Switch to `ATOM` Editor.
-   1. Right click on the `ansible` folder
+   1. Close all the files that are open in Atom.
+   2. Right click on the `ansible` folder
    2. Select new folder
    3. name it `roles`
 2. Repeat above and create following folders:
    1. templates
-   2. groups_vars
-   3. hosts_vars
+   2. group_vars
+   3. host_vars
    4. files
-   
+
 ![roles](/images/roles-801.png)
 ### Exercise 2
 #### Creating Host Inventory File
 Inventory file contains list of hosts that you want to manage from Ansible.  In our case, it will list of switches that we want to manage by ansible. These host/swiches can be organized in groups.
 
-2. In the `ATOM` Editor , right click on `ansible` folder and select `New File`.
-3. Save this file as `hosts`
-3. add the the following lines to the file   
+2. In the `ATOM` Editor
+3. Right click on `ansible` folder and select `New File`.
+3. Name it `hosts`
+4. Add the the following lines to the file   
 
     ```
     [all:vars]
@@ -143,7 +145,6 @@ Inventory file contains list of hosts that you want to manage from Ansible.  In 
     n9k-1
 
     ```
-4. Delete all the host from the above file , except for the switch that is assigned to you.  Your host file should be similar to the picture below.
 
     ![ansibel-1](/images/hosts-11.png)
 
@@ -170,6 +171,7 @@ You can read more about Inventory file here:  Inventory http://docs.ansible.com/
 
 To login into the switches, we need the `username` and `password`.  This file with combination with `provider` keyword in ansbile playbook will let ansible login into the devices.  
 
+*What is provider keyword used for?*
 **All core networking modules implement a provider argument, which is a collection of arguments used to define the characteristics of how to connect to the device.
 The provider argument accepts keyword arguments and passes them through to the task to assign connection and authentication parameters.**
 
@@ -221,11 +223,11 @@ http://docs.ansible.com/ansible/faq.html
     docker attach ansible
     ```
 2. you should be inside your ansible docker container.
-3. update the hosts file on the ansible container. Since we not using dns for host resolution, we need to update the hosts file on the container
-    1. insid the ansible container type
+3. Since we not using dns for host resolution, we need to update the hosts file on the container.
+    1. inside the ansible container type
     2. `vim /etc/hosts`
     3. press `i` to insert text
-       4. add a new entry to reflect all your hosts. you just need to add entries for you switch eg. `172.16.123.135  n9k-1`.  Do not change or delete any other entries.
+       1. add a new entry to reflect all your hosts. you just need to add entries for you switch eg. `172.16.123.135  n9k-1`.  Do not change or delete any other entries.
 
         ![hosts](/images/ansible-300.png)
     5. Save the file ...`esc`  then type `:wq`
