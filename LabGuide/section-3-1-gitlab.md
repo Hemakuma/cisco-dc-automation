@@ -308,6 +308,7 @@ A branch in Git is simply a lightweight movable pointer to one of these commits.
 6. `git commit -m  'updated readme file' ` to commit the file
 7. `git push -u origin readmeupdate` push the branch to gitlab
 
+Or you can use your `ATOM` if you have git-plus plugin.  `ctrl + shift + H`
 
 ### Exercise 4
 #### Create `Merge Request` on gitlab
