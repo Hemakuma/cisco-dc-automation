@@ -42,8 +42,9 @@ All the python scripts requires switch login information (Credentials).  You can
 1. Switch to  `ATOM` editor window
 2. Close all the files that are open in ATOM to make space for nxtoolkit programming files.
 3. Make sure you see the `sample` folder under `nxtoolkit` folder. Expand this folder to see all the files. All your object based scripts are located in the this folder.
-4. In your ATOM editor, create a new file called `credentials.py`.  Right click on the `samples` folder under nxtoolkit folder and select `NEW File`
-5. Put the following content in this file. Make sure to change the `URL` to point to your  switch ip.
+4. In your ATOM editor, create a new file called `credentials.py`.  
+5. Right click on the `samples` folder under `nxtoolkit` folder and select `NEW File`
+5. Copy and paste the following content in this file. Make sure to change the `URL` to point to your  switch ip.
 https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/credentials.py
 5. Save the file. `CMD+S`
 6. close the file

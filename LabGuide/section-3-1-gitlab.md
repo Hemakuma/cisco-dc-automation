@@ -387,11 +387,12 @@ Or you can use your `ATOM` if you have git-plus plugin.  `ctrl + shift + H` and 
 
 ```
 git branch
-git log
 git config -l
 git status
 git show
 git remote -v
 git branch -v
+git log
+git log --oneline --decorate --graph --all
 
 ```
