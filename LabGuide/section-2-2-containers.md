@@ -37,9 +37,9 @@ Docker compose is one way of spinning up docker containers. Basically you create
   2. type `docker-machine ip default`
   3. write this ip somewhere. You will need this through out the lab.
 2. Switch to `ATOM` editor.
-  1. Right click on the `training` Folder and select new file.
+  1. Right click on the `training` Folder and select `New file`.
   2. name it `docker-compose.yml`
-  3. Copy and Paste the following content into the file and save it:
+  3. Copy and Paste content into the file and save it.  Use the contents from github url. Those are more upto date content.
   4. Make sure to change the `external_url` to reflect the ip address of you docker machine.
   https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/Docker-compose.yml
 
@@ -77,6 +77,8 @@ Docker compose is one way of spinning up docker containers. Basically you create
               - '50000:50000'
 
   ```
+
+3. Save the file `CMD + S`
 
 ### Exercise-2
 #### Spin up gitlab and jenkins container
