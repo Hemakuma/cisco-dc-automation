@@ -86,11 +86,11 @@ Docker compose is one way of spinning up docker containers. Basically you create
 1. Switch to the terminal window
 2. cd `training`
 3. type ` docker-compose up -d`
-4. this should start up the gitlab and jenkins container.  It will take couple of mins to download the images.
+4. this should start up the gitlab and jenkins container.  It will take couple of 10-15 mins to download the images.
 
   ![docker-comp](/images/docker-comp-1.png)
 
-5. Wait for this process to finish.  It should take couple of mins.
+5. Wait for this process to finish.
 6. Verify that your gitlab and jenkins container is running. Type  `docker ps`
 7. type `docker-machine ip default`  Note down this ip somewhere, you will need it throughout this lab.
 
@@ -105,15 +105,16 @@ Lets install Ansible on  a docker container.
 1. Switch to `ATOM` editor
   1. Right click on the `training` folder and select `New Folder`.  Name it `ansible`.
   2. Right click on the `ansible` folder and select `New File`. Name it `README.md`
-  3. Type something eg `This is my first edit` in it and save.
+  3. Type something eg `This is my first edit` in it.
+  4. Save the file `CMD+S`
 2. Switch to the terminal window
-  2. Spin up a nxos ansible container.  Remember to replace my userid `hemakuma` with your.  Not do not replace it for the image name. Leave the image name to `hemakuma/ansible`
+  2. Spin up a nxos ansible container.
       1. Mac Users  
       `docker run --name ansible -h ansible -it --restart=always -v ~/training/ansible:/nxos-ansible/myscripts --workdir /nxos-ansible/myscripts hemakuma/ansible`
       2. Windows Users  
       ` docker run --name ansible -h ansible -it --restart=always -v ~/training/ansible:/nxos-ansible/myscripts --workdir /nxos-ansible/myscripts hemakuma/ansible`
 
-        **Windows users if you having issues, try running the command directly with winpty added to the start of the docker command`**
+        **Windows users, make sure you are using docker quick terminal**
 
     This will start the container and log you in. From inside the container.
 
