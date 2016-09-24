@@ -210,12 +210,11 @@ For the lab environment, we want to quickly push the changes to the remote repo 
 ### Create another gitlab account (`developer`)
 You will use the 2nd account to review the changes. You will use your first account to request the merge and using 2nd account to review , approve and merge the changes to the trunk.
 
-1. sign out from gitlab.
+1. sign out from gitlab.  Sign out button is at the right top corner.
 2. Fill in the form for `New User` account
 
   ![gitlab](/images/gitlab-400.png)
 
-3. Sign back in gitlab using the new account.  Make sure it works.
 
 ###Exercise 2
 ####Giving access to your projects to this user.
@@ -248,9 +247,21 @@ With git-plus plugin, you can manage git updates directly from ATOM.  In order t
 
 4. Go to `File`  and `Add project Folder`
 5. Navigate to `ansible`  folder under `training` and open it.
-6. Repeat the same for `nxtoolkit` folder.
+6. Repeat the same process to add `nxtoolkit` folder as a `project folder` in ATOM.
 7. click on any file inside nxtoolkit folder and take a look at the bottom right corner. It should tell you will git branch.
-8. Now u can run git add / commit / push directly from ATOM.  Go to Package menu and select git-plus.
+8. Now u can run git add / commit / push directly from ATOM.  Go to `Package` menu and select `git-plus`.
+9. For windows users, you might have to add the `git` PATH to your Environment variable.
+
+```
+Windows users
+right-click "My Computer",
+select "Properties",
+open "Advanced",
+click "Environment Variables",
+highlight the "Path" variable,
+click "Edit"
+Add the path to git.  eg C:\Program Files\Git\bin
+```
 
 *You want to this do way so that `ATOM` can track your git changes.  Each git repo should be a `atom project`*
 
@@ -261,10 +272,11 @@ With git-plus plugin, you can manage git updates directly from ATOM.  In order t
 ### Exercise 1
 #### Creating a git branch
 1. Switch to terminal window
-2. Navigate to `ansible` folder. `cd training` ; `cd ansible`
+2. Navigate to `ansible` folder. `cd ~/training/ansible`
 4. Type `git branch`  to see what branches you currently have and where the `HEAD` is pointing to.  You should only see the `master` branch and the `HEAD` should be pointing to it.
 5. Create a new branch called `readmeupdate`
 5. `git branch readmeupdate`  to create a new branch.
+6. `git branch` ; notice how you now have 2 branches. HEAD is still pointing to the master branch.
 6. `git checkout readmeupdate` to switch to new branch.
 7. `git branch`  now the HEAD should be pointing to the new branch.
 
