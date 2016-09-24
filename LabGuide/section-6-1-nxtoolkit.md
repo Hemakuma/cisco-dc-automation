@@ -103,25 +103,26 @@ https://github.com/datacenter/nxtoolkit/blob/master/nxtoolkit/nxphysobject.py
 ### Exercise 5
 #### Create a Script that displays all the interfaces that have "operational state" as up.
 
-1. Lets make copy of `nx-show-interfaces.py` and modify the copy  (u can name it anything you like but i usually put my initials as prefix to the original script so that i can easily find my scripts later )
-2. In your nxtoolkit terminal
-3. `pwd`
-4. you should be inside the
-5. `/opt/nxtoolkit/myscripts/samples`
-6. `cp nx-show-interfaces.py hk-show-interfaces.py`
+1. Lets make copy of `nx-show-interfaces.py` and modify the copy  (u can name it anything you like but i usually put my initials as prefix to the original script so that i can easily find them later )
+2. Switch to `nxtoolkit terminal`
+   3. `pwd`
+   4. you should be inside the
+   5. `/opt/nxtoolkit/myscripts/samples`
+   6. `cp nx-show-interfaces.py hk-show-interfaces.py`
 7. Go to `ATOM` editor
-8. open up this file by double clicking it.
-9. Modify `hk-show-interfaces.py` script to achieve the above goal. You want to see all the interfaces whose `operational state` is `up`
-10. HELP : https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/hk-show-interfaces.py
+   8. open up this file by double clicking it.
+   9. Modify `hk-show-interfaces.py` script to achieve the above goal. You want to see all the interfaces whose `operational state` is `up`
+   10. HELP : https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/hk-show-interfaces.py
 11. Switch to your nxtoolkit terminal  and run the script
-12. `./hk-show-interfaces.py`
-13. Switch to  switch CLI terminal , shut some of the interfaces eg
-   ```
-   config t
-   int eth 1/4
-   shut
-   ```
-14. Repeat step 4
+   12. `./hk-show-interfaces.py`
+13. Switch to  switch CLI terminal.
+   1. shut some of the interfaces eg
+      ```
+      config t
+      int eth 1/4
+      shut
+      ```
+14. Repeat step 11
 15. compare the results.
 
    ![nxtoolkit](/images/nxtoolkit-31.png)
