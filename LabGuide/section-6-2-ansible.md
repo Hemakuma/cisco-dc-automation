@@ -125,6 +125,7 @@ http://docs.ansible.com/ansible/list_of_network_modules.html
    2. groups_vars
    3. hosts_vars
    4. files
+   
 ![roles](/images/roles-801.png)
 ### Exercise 2
 #### Creating Host Inventory File
