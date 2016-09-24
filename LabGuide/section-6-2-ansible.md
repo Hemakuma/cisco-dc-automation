@@ -125,7 +125,7 @@ http://docs.ansible.com/ansible/list_of_network_modules.html
    2. groups_vars
    3. hosts_vars
    4. files
-
+![roles](/images/roles-801.png)
 ### Exercise 2
 #### Creating Host Inventory File
 Inventory file contains list of hosts that you want to manage from Ansible.  In our case, it will list of switches that we want to manage by ansible. These host/swiches can be organized in groups.
