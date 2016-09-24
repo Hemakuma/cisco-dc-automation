@@ -170,6 +170,7 @@ To login into the switches, we need the `username` and `password`.  This file wi
 
 **All core networking modules implement a provider argument, which is a collection of arguments used to define the characteristics of how to connect to the device.
 The provider argument accepts keyword arguments and passes them through to the task to assign connection and authentication parameters.**
+
 https://docs.ansible.com/ansible/intro_networking.html
 
 ### Exercise 4
