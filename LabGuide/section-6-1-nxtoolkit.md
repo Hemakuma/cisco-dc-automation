@@ -87,16 +87,16 @@ https://github.com/datacenter/nxtoolkit/blob/master/nxtoolkit/nxphysobject.py
 #### Showing all vlans configured on the switch
 
 1. Switch to  your nxostoolkit terminal
-2. type `./nx-show-l2bds.py`
-3. note down the vlans you see.
+   2. type `./nx-show-l2bds.py`
+   3. note down the vlans you see.
 4. Open up another Terminal Window
 5. ssh to your switch
    6. `ssh admin@10.114.217.xx`
    7. configure t
    8. vlan 10
 9. Switch to  your nxostoolkit terminal
-10. `./nx-show-l2bds.py`
-11. compare the results with step 1.
+   10. `./nx-show-l2bds.py`
+   11. compare the results with step 1.
 
 **TIP:**  Going forward, keep both of the terminal window open; use nxtoolkit terminal to run the python scripts and use the ssh session to switch to verify the configurations.
 
