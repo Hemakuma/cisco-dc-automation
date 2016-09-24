@@ -21,7 +21,7 @@ Off Box Programming
 
 Introduction
 ---
-There is different ways that you can modify the attributes of the managed objects (MO). See picture below.  In this section will be using NXAPI-CLI based and NXAPI-REST based to manipulate these objects.
+There are different ways that you can modify the attributes of the managed objects (MO). See picture below.  In this section will be using NXAPI-CLI based and NXAPI-REST based to manipulate these objects.
 Both methods are modifying the underlaying MOs.  NXAPI-CLI is sending CLI commands over HTTP to the switch.  The webserver in the switch strips off the http and sends the command to the CLI API which then modifies the MO.  NXAPI-REST directly modifying the MO.
 
 ![ob-1](/images/ob-2.png)  
@@ -84,11 +84,12 @@ Its no fun just creating one vlan. We could do this faster with CLI.   Lets writ
 
 5. Save the file `CMD + S` as `vlan-consist-check.py`  
 6. Read the code and try to make sense of it.  Keep doing this with all the scripts we write.  You will see a pattern on how the codes are written.  
-7. Go to your nxtoolkit container terminal window and run this script.  This script should be in your `myscript` folder.  
-8. run the script `python vlan-consist-check.py`  
+7. Switch to nxtoolkit container terminal window and run this script.
+   1. This script should be in your `myscript` folder.  
+   2. run the script `python vlan-consist-check.py`  
 9. Switch to your switch console window
-10. verify that those vlans are created.  `Show run vlan`
-11. Re-run the script. This time it should not make any changes and it verified that all the required vlans are on the switch.  Go ahead and delete one vlan and try to re-run the script.
+   10. verify that those vlans are created.  `Show run vlan`
+11. Re-run the script. This time it should not make any changes because  all the required vlans are already on the switch.  Go ahead and delete one vlan and try to re-run the script.
 
 
 ### Exercise-3

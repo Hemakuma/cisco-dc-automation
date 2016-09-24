@@ -64,9 +64,9 @@ Introduction
     vlan 999
     name web
     ```
-    as shown below.
 
-3. make sure that you have selected message format to be `json` and command type to be `cli_config`
+
+3. Make sure that you have selected message format to be `json` and command type to be `cli_config`
 4. Click on `POST` to send the commands via http to the switch.
 
     **NX-API Browser interface supports several command types. Make sure you have it set for cli_config in this case or your copied code will execute with an error.**
@@ -77,14 +77,15 @@ Introduction
 6. Click on the `Python button` in the Request Window  and copy the content.  We will use this for the next exercise.
 7. Switch to the ssh session of the switch
     1. verify that vlan 999 is configured on the switch
-    2. `show vlan`
+    2. `show vlan` or `show run vlan`
 
 ### Exercise 5
 #### Generating Python Code.
-You can use sandbox to generate your base python code for off box programming.
+You can use sandbox to generate base python code for off box programming.
 
 1. Save this python script that you copied from exercise 4 to a file (create-vlan.py)
 1. Switch to  `ATOM` editor window
+2. Close all the files that are currently open in the ATOM.
 5. Right click on `nxtookit` folder and select create `New File`. name it `create-vlan.py`
 6. paste the content in this file
 7. save the file (`CMD + S or Ctrl+S`).
