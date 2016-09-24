@@ -252,16 +252,15 @@ With git-plus plugin, you can manage git updates directly from ATOM.  In order t
 8. Now u can run git add / commit / push directly from ATOM.  Go to `Package` menu and select `git-plus`.
 9. For windows users, you might have to add the `git` PATH to your Environment variable.
 
-```
-Windows users
-right-click "My Computer",
-select "Properties",
-open "Advanced",
-click "Environment Variables",
-highlight the "Path" variable,
-click "Edit"
-Add the path to git.  eg C:\Program Files\Git\bin
-```
+  ```
+  right-click "My Computer",
+  select "Properties",
+  open "Advanced",
+  click "Environment Variables",
+  highlight the "Path" variable,
+  click "Edit"
+  Add the path to git.  eg C:\Program Files\Git\bin
+  ```
 
 *You want to this do way so that `ATOM` can track your git changes.  Each git repo should be a `atom project`*
 
