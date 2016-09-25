@@ -348,13 +348,13 @@ Applying the base configuration to all switches in the inventory using jinja2 te
 #### Create ansible roles directory structure
 Ansible galaxy provides a very easy way to create the directory structure to host your roles.
 
-1. Switch to 'ansible container'
-2. cd to roles directory
-3. type `ansible-galaxy init login`
-4. type `ansible-galaxy init baseconfig`
-5. type `ansible-galaxy init vlans`
-6. type `ansible-galaxy init uplinks`
-7. type `ansible-galaxy init hostports`
+1. Switch to 'ansible container' terminal window
+   2. `cd roles`
+   3. type `ansible-galaxy init login`
+   4. type `ansible-galaxy init baseconfig`
+   5. type `ansible-galaxy init vlans`
+   6. type `ansible-galaxy init uplinks`
+   7. type `ansible-galaxy init hostports`
 
 ### Exercise 2
 #### Configuring login roles
