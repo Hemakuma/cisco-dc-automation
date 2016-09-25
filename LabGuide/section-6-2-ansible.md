@@ -752,10 +752,10 @@ Since the config is per switch basis, we need to hold the variables in the `host
 
     ```
     hostports:
-       - { int: "ethernet1/5", des: ESXI-1, vlan: 20 }
-       - { int: "ethernet1/6", des: ESXI-2, vlan: 20 }
-       - { int: "ethernet1/7", des: Openstack-nova-server-1, vlan: 60}
-       - { int: "ethernet1/8", des: Openstack-nova-server-2, vlan: 60}
+       - { int: "ethernet1/5", des: ESXI-1, vlan: 20, state: present }
+       - { int: "ethernet1/6", des: ESXI-2, vlan: 20, state: present }
+       - { int: "ethernet1/7", des: Openstack-nova-server-1, vlan: 60, state: present}
+       - { int: "ethernet1/8", des: Openstack-nova-server-2, vlan: 60, state: present}
     ```
 4. Save the file `Cmd+S`
 
@@ -797,6 +797,7 @@ https://docs.ansible.com/ansible/nxos_switchport_module.html
         interface: "{{ item.int }}"
         description: "{{ item.des }}"
         mode: layer2
+        state: "{{ item.state }}"
       with_items: "{{hostports}}"
       notify:
         - Save Config
