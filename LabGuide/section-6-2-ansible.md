@@ -789,7 +789,6 @@ https://docs.ansible.com/ansible/nxos_switchport_module.html
 
     ```
     ---
-
     # tasks file for hostports
     - name: Ensure that port is in layer 2 mode
       nxos_interface:
