@@ -157,7 +157,7 @@ You can read more about Inventory file here:  Inventory http://docs.ansible.com/
 #### Creating credentials file
 1. Under `ansible` folder , create a new file
 2. name it `credentials.yml`
-3. copy and paste the following.
+3. copy and paste the following.  Change the `username` and `password` to reflect your environment.
 
     ```
     ---
@@ -230,7 +230,11 @@ http://docs.ansible.com/ansible/faq.html
        3. cat /etc/hosts
 
         ![hosts](/images/ansible-300.png)
+
       4. `ping n9k-1`  make sure the host is able to resolve it.
+      5. `ctrl + c` to break the ping.
+
+
 3. Run Ping playbook.
     1. `ansible-playbook -i hosts ping.yml`
 
