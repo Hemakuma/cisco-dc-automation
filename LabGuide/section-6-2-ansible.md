@@ -260,24 +260,6 @@ Use nxos_facts module . Read more about it here  https://docs.ansible.com/ansibl
 3. Copy and past the following :
    https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/ex-show-facts.yml
 
-   ```
-   ---
-   - name: get facts
-     hosts: leafs
-     connection: local
-     gather_facts: no
-     tasks:
-       - name: obtain login credentials
-         include_vars: credentials.yml
-
-       - name: get switch facts
-         nxos_facts:
-           provider: "{{ creds }}"
-
-       - template: src=templates/facts.j2 dest=files/{{ inventory_hostname }}_facts.json
-   ```
-
-
 5. Save the file `CMD + S`
 6. Create jinja2 template to store the data
    1. Right click on the `templates` folder and select `new file`. Name it `facts.j2`

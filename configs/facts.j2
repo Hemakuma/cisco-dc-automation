@@ -1,0 +1,19 @@
+DEVICE: {{ inventory_hostname }}
+
+Version:
+{{ kickstart | to_nice_json }}
+
+Platform:
+{{ platform | to_nice_json }}
+
+vlan Info:
+{{ vlan_list | to_nice_json }}
+
+Interfaces:
+{{ interfaces_list | to_nice_json }}
+
+Power Supply Info:
+{{ power_supply_info | to_nice_json }}
+
+Fan Info:
+{{ fan_info | to_nice_json }}
