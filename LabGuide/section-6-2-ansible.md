@@ -263,7 +263,8 @@ Use nxos_facts module . Read more about it here  https://docs.ansible.com/ansibl
 5. Save the file `CMD + S`
 6. Create jinja2 template to store the data
    1. Right click on the `templates` folder and select `new file`. Name it `facts.j2`
-   2. Add the following content to this file:
+   2. Copy and paste the following content to this file:
+   3. https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/facts.j2
 
        ```
        DEVICE: {{ inventory_hostname }}
