@@ -253,11 +253,11 @@ To get snippet
 
 ### Exercise 1
 #### Gather facts about the switch
-use nxos_facts module .  https://docs.ansible.com/ansible/nxos_facts_module.html
+Use nxos_facts module . Read more about it here  https://docs.ansible.com/ansible/nxos_facts_module.html
 
-1. Under `ansible` folder , create a new file. Right click and select `New File`
-3. name it `ex-show-facts.yml`
-4. copy and past the following :
+1. Right click on `ansible` folder and select `New File`
+2. name it `ex-show-facts.yml`
+3. copy and past the following :
 
    ```
    ---
