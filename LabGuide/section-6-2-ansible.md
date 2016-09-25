@@ -225,13 +225,11 @@ http://docs.ansible.com/ansible/faq.html
 2. you should be inside your ansible docker container.
 3. Since we not using dns for host resolution, we need to update the hosts file on the container.
     1. inside the ansible container type
-    2. `vim /etc/hosts`
-    3. press `i` to insert text
-       1. add a new entry to reflect all your hosts. you just need to add entries for you switch eg. `172.16.123.135  n9k-1`.  Do not change or delete any other entries.
+       1. `echo "172.16.123.135  n9k-1" >> /etc/hosts`
+       2. cat /etc/hosts
 
         ![hosts](/images/ansible-300.png)
-    5. Save the file ...`esc`  then type `:wq`
-    6. `ping n9k-1`  make sure the host is able to resolve it.
+      3. `ping n9k-1`  make sure the host is able to resolve it.
 3. Run Ping playbook.
     1. `ansible-playbook -i hosts ping.yml`
 
