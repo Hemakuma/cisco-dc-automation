@@ -807,6 +807,7 @@ https://docs.ansible.com/ansible/nxos_switchport_module.html
         interface: "{{ item.int }}"
         mode: access
         access_vlan: "{{ item.vlan }}"
+        state: "{{ item.state }}"
       with_items: "{{hostports}}"
       notify:
         - Save Config
