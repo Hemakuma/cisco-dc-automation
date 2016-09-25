@@ -689,7 +689,7 @@ https://docs.ansible.com/ansible/nxos_template_module.html
     - name: configure uplinks template
       nxos_template:
         provider: "{{ creds }}"
-        src: interface.j2
+        src: uplinks.j2
         backup: yes
       notify:
         - Save Config
@@ -700,7 +700,7 @@ https://docs.ansible.com/ansible/nxos_template_module.html
 ### Exercise 4
 #### Create jinja2 template for the uplink configuration.
 1. Navigate to `ansible --> roles --> uplinks --> templates`
-2. Right click on the `templates` folder and select `New File`. Name it `interface.j2`
+2. Right click on the `templates` folder and select `New File`. Name it `uplinks.j2`
 3. Copy and paste the content from this link.  This is the jinja 2 template.
 
     https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/uplinks.j2
