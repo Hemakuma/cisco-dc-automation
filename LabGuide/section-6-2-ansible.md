@@ -258,6 +258,7 @@ Use nxos_facts module . Read more about it here  https://docs.ansible.com/ansibl
 1. Right click on `ansible` folder and select `New File`
 2. Name it `ex-show-facts.yml`
 3. Copy and past the following :
+   https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/ex-show-facts.yml
 
    ```
    ---
