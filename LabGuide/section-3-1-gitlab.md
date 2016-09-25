@@ -383,8 +383,9 @@ Or you can use your `ATOM` if you have git-plus plugin.  `ctrl + shift + H` and 
 10. Create a merge request
 11. Your team lead will review the code & merge it to the main branch
 
+----
 
-## Saving your file on github.
+## Backing up your repository on github.
 Github offers free public repository to store your codes.
 
 Let ensure that we save our codes on git hub too.
