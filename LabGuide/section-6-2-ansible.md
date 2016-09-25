@@ -796,12 +796,16 @@ https://docs.ansible.com/ansible/nxos_switchport_module.html
         interface: "{{ int }}"
         description: "{{ des }}"
         mode: layer2
+      with_items: "{{hostports}}"
+      notify:
+        - Save Config
 
     - nxos_switchport:
         provider: "{{ creds }}"
         interface: "{{ int }}"
         mode: access
         access_vlan: "{{ vlan }}"
+      with_items: "{{hostports}}"
       notify:
         - Save Config
     ```
