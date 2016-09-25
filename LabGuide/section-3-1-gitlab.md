@@ -383,6 +383,40 @@ Or you can use your `ATOM` if you have git-plus plugin.  `ctrl + shift + H` and 
 10. Create a merge request
 11. Your team lead will review the code & merge it to the main branch
 
+
+## Saving your file on github.
+Github offers free public repository to store your codes.
+
+Let ensure that we save our codes on git hub too.
+
+
+### Exercise-1
+####Creating github account and uploading your ssh key
+
+  1. Point your browser to http://github.com
+  2. Create a account if you don't have it already.
+  3. ![GitHub](/images/github-1.png)
+  3. Login using your  username/password
+
+### Exercise-2
+####Creating a New Project on Github.com
+
+  1. click on the + button to add a new repository to your account.
+
+    ![GitHub](/images/git-pro-1.png)
+
+  3. Name the repository `training-ansible`
+  4. Fill in the form.
+
+    ![GitHub](/images/git-600.png)
+  5. Repeat this process and create another repository `training-nxtoolkit`
+
+### Exercise-2
+#### Adding multiple remotes to your git repo
+1. Switch back to terminal window.
+2. `cd ~/training/ansible`
+3.
+
 ## Some useful git command
 
 ```
