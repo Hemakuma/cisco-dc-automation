@@ -1,0 +1,14 @@
+---
+- name: get facts
+  hosts: leafs
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: obtain login credentials
+      include_vars: credentials.yml
+
+    - name: get switch facts
+      nxos_facts:
+        provider: "{{ creds }}"
+
+    - template: src=templates/facts.j2 dest=files/{{ inventory_hostname }}_facts.json
