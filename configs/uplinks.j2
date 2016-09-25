@@ -3,6 +3,6 @@ interface {{ uplink.int }}
   no switchport
   mtu 9216
   ip address {{ uplink.ip }}
-  ip address {{ uplink.des }}
+  description {{ uplink.des }}
   no shutdown
 {% endfor %}
