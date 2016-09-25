@@ -747,10 +747,9 @@ Since the config is per switch basis, we need to hold the variables in the `host
 
 1. Navigate to `ansible --> hosts_vars`
 2. Open `n9k-1.yml` (we have already created this file in the last exercise)
-3. copy and paste the following code.
+3. Edit the file. Copy and paste the following code at the end of the file
 
     ```
-    ---
     hostports:
        - { int: "ethernet1/5", des: ESXI-1, vlan: 20 }
        - { int: "ethernet1/6", des: ESXI-2, vlan: 20 }
