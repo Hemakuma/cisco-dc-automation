@@ -840,7 +840,8 @@ https://docs.ansible.com/ansible/nxos_switchport_module.html
 
 ### Excercise 6
 #### Add new server port
-configure a new server port on n9k-1 port eth1/8
+1. Configure a new server port on n9k-1 port eth1/3
+2. Remove all the openstack server ports
 
 ## Ansible Tips
 ### How to see which ansible modules are installed?
