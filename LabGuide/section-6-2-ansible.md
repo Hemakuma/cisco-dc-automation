@@ -799,7 +799,7 @@ https://docs.ansible.com/ansible/nxos_switchport_module.html
 
     - nxos_switchport:
         provider: "{{ creds }}"
-        interface: eth1/5
+        interface: "{{ int }}"
         mode: access
         access_vlan: "{{ vlan }}"
       notify:
