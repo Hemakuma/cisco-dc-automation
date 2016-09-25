@@ -363,7 +363,7 @@ This ansible role allows us to login into the switches.
 1. Switch to `Atom` Editor
 2. navigate to `ansible --> roles --> login --> vars` folder
 3. open `main.yml`
-5. type in the following:  Adjust the username and password accordingly.
+5. type in the following:  **Adjust the `username` and `password` accordingly.**
 
     ```
     ---
