@@ -650,8 +650,8 @@ This role allows us to create configuration for uplinks on the switches. Since t
     ```
     ---
     uplink_interface:
-      - {int: "ethernet1/1", ip: 192.168.1.2/30}
-      - {int: "ethernet1/2", ip: 192.168.2.2/30}
+      - {int: "ethernet1/1", ip: 192.168.1.2/30, des: To spine_1}
+      - {int: "ethernet1/2", ip: 192.168.2.2/30, des: To spine_2}
 
     ```
 4. Save the file `Cmd+S`
@@ -703,7 +703,7 @@ https://docs.ansible.com/ansible/nxos_template_module.html
 2. Right click on the `templates` folder and select `New File`. Name it `interface.j2`
 3. Copy and paste the content from this link.  This is the jinja 2 template.
 
-    https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/basetemplate.j2
+    https://github.com/Hemakuma/cisco-dc-automation/blob/master/configs/uplinks.j2
 
 4. Save the file `CMD + S`
 
@@ -731,7 +731,8 @@ https://docs.ansible.com/ansible/nxos_template_module.html
 2. Run the playbook
     1. `ansible-playbook -i hosts deploy-uplinks.yml`
 3. Login into your switch.
-4. Verify that ansible has made those configuration.
+   1. Verify that ansible has made those configuration.
+   2. `show run interface`
 
 
 ## Section-6-2-6: Hostport Configuration.
