@@ -394,7 +394,7 @@ This role allows us to do base configuration on all the switches. Base configura
 
 ### Exercise 4
 
-To configure base configuration, we are going to use nxos_template module. This module allows implementers to work with the device running-config. It provides a way to push a set of commands onto a network device by evaluating the current running-config and only pushing configuration commands that are not already configured. The config source can be a set of commands or a template.  This module uses jinja2 template.  
+To configure base configuration, we are going to use `nxos_template` module. This module allows implementers to work with the device running-config. It provides a way to push a set of commands onto a network device by evaluating the current running-config and only pushing configuration commands that are not already configured. The config source can be a set of commands or a template.  This module uses jinja2 template.  
 
 **What is Jinja2 Template?**
 
@@ -486,10 +486,12 @@ So where does jinja2 gets the values for its variables?  At the runtime of the p
 ### Exercise 8
 #### Lets run the playbook
 1. Switch to the `ansible container` terminal window.
-2. Run the playbook
-    1. `ansible-playbook -i hosts deploy-baseconfig.yml`
+   1. cd to `myscripts` directory
+   2. Run the playbook
+       1. `ansible-playbook -i hosts deploy-baseconfig.yml`
 3. Login into your switch.
-4. Verify that ansible has made those configuration.
+   4. Verify that ansible has made those configuration.
+   5. `show run`
 
 ### Excercise 9
 #### Adding New NTP server
@@ -505,6 +507,7 @@ Lets say Server guys added a new `NTP server` which has ip of `192.200.0.2`. You
     2. `ansible-playbook -i hosts deploy-baseconfig.yml`
 3. Login into your switch.
     1. Verify that ansible has made those configuration.
+    2. `show run ntp`
 4. Switch to `ATOM` editor.
     1. Navigate to `ansible --> roles --> baseconfig-->backup`
     2. you should see your backupfiles
@@ -543,6 +546,7 @@ Lets update the vars directory with all our variables.
 3. copy and paste the following code.
 
     ```
+    ---
     vlans:
         - { vlan_id: 10, name: web, state: present }
         - { vlan_id: 20, name: app, state: present }
