@@ -157,7 +157,7 @@ You can read more about Inventory file here:  Inventory http://docs.ansible.com/
 #### Creating credentials file
 1. Under `ansible` folder , create a new file
 2. name it `credentials.yml`
-3. copy and paste the following.  Change the `username` and `password` to reflect your environment.
+3. copy and paste the following.  Change the `username` and `password` to match your environment.
 
     ```
     ---
@@ -201,7 +201,7 @@ http://docs.ansible.com/ansible/nxos_ping_module.html
 
         # Test reachability to a few different public IPs using mgmt vrf
         # if device has name lookups turned on, you can use names
-        - nxos_ping: dest={{ item }} vrf=management username=admin password=cisco123 host={{ inventory_hostname }}
+        - nxos_ping: dest={{ item }} vrf=management  provider="{{ creds }}" host={{ inventory_hostname }}
           with_items:
             - 8.8.8.8
             - 4.4.4.4
