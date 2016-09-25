@@ -13,7 +13,7 @@ For this lab, we will be using N9K NXOSv switch.  You need to have this virtual 
 
 If you have physical switches, you can use them too.
 
-![intro](/images/intro-3.png)
+![intro](/images/intro-21.png)
 
 Most of these tools can be installed on your laptop
 
