@@ -793,8 +793,8 @@ https://docs.ansible.com/ansible/nxos_switchport_module.html
     - name: Ensure that port is in layer 2 mode
       nxos_interface:
         provider: "{{ creds }}"
-        interface: "{{ int }}"
-        description: "{{ des }}"
+        interface: "{{ item.int }}"
+        description: "{{ item.des }}"
         mode: layer2
       with_items: "{{hostports}}"
       notify:
@@ -802,9 +802,9 @@ https://docs.ansible.com/ansible/nxos_switchport_module.html
 
     - nxos_switchport:
         provider: "{{ creds }}"
-        interface: "{{ int }}"
+        interface: "{{ item.int }}"
         mode: access
-        access_vlan: "{{ vlan }}"
+        access_vlan: "{{ item.vlan }}"
       with_items: "{{hostports}}"
       notify:
         - Save Config
