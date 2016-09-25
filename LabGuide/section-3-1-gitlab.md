@@ -406,17 +406,36 @@ Let ensure that we save our codes on git hub too.
 
     ![GitHub](/images/git-pro-1.png)
 
-  3. Name the repository `training-ansible`
+  3. Name the repository `training-nxtoolkit`
   4. Fill in the form.
 
     ![GitHub](/images/git-600.png)
-  5. Repeat this process and create another repository `training-nxtoolkit`
+  5. Repeat this process and create another repository `training-ansible`
 
 ### Exercise-2
-#### Adding multiple remotes to your git repo
+#### Adding multiple remotes to your ansible git repo
 1. Switch back to terminal window.
-2. `cd ~/training/ansible`
-3.
+  2. `cd ~/training/ansible`
+  3. `git remote -v`
+  4. `git remote set-url --add origin https://<username>:<password@github.com/<username/training-ansible.git`
+  5. replace the username and password with your own.
+  6. `git remote -v`
+  7. `git push`
+8. Switch to browser.
+  9. Refresh. Do you see your files on github.
+
+### Exercise-2
+#### Adding multiple remotes to your nxtoolkit git repo
+1. Switch back to terminal window.
+  2. `cd ~/training/nxtoolkit`
+  3. `git remote -v`
+  4. `git remote set-url --add origin https://<username>:<password@github.com/<username/training-nxtoolkit.git`
+  5. replace the username and password with your own.
+  6. `git remote -v`
+  7. `git push`
+8. Switch to browser.
+  9. Refresh. Do you see your files on github.
+
 
 ## Some useful git command
 
