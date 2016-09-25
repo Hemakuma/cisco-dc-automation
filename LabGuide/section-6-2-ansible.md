@@ -551,7 +551,8 @@ Lets update the vars directory with all our variables.
         - { vlan_id: 10, name: web, state: present }
         - { vlan_id: 20, name: app, state: present }
         - { vlan_id: 30, name: db, state: present }
-        - { vlan_id: 40, name: misc, state: present }
+        - { vlan_id: 40, name: ESXI, state: present }
+        - { vlan_id: 60, name: Openstack, state: present }
         - { vlan_id: 99, name: native_vlan, state: present }
     ```
 4. Save the file `Cmd+S`
@@ -740,21 +741,21 @@ Another common Day 2 operations tasks is to configure hosts/server ports.  We wa
 
 ### Exercise 1
 #### Hostport configuration repository
-We have created a role to hold all the hostport configuration data.  Host port configuration includes things like `switch port access mode`,  etc that needs to be  provisioned to per switches basis.
+This role allows us to create configuration server facing ports.  Configuration includes things like `switch port access mode`, `accesss vlan`  etc that needs to be  provisioned to per switches basis.
 
 Since the config is per switch basis, we need to hold the variables in the `host_vars`. We need create folder for each host in this folder.  Ansible will search this folder to look for the variables.
 
 1. Navigate to `ansible --> hosts_vars`
-2. Right click and select `New Folder`. Name it `n9k-1.yml`
+2. Open `n9k-1.yml` (we have already created this file in the last exercise)
 3. copy and paste the following code.
 
     ```
     ---
     hostports:
-       - {int: "ethernet1/5", des: ESXI-1}
-       - {int: "ethernet1/6", des: ESXI-2}
-       - {int: "ethernet1/7", des: Openstack-nova-server-1}
-       - {int: "ethernet1/8", des: Openstack-nova-server-2}
+       - { int: "ethernet1/5", des: ESXI-1, vlan: 20 }
+       - { int: "ethernet1/6", des: ESXI-2, vlan: 20 }
+       - { int: "ethernet1/7", des: Openstack-nova-server-1, vlan: 60}
+       - { int: "ethernet1/8", des: Openstack-nova-server-2, vlan: 60}
     ```
 4. Save the file `Cmd+S`
 
@@ -793,15 +794,15 @@ https://docs.ansible.com/ansible/nxos_switchport_module.html
     - name: Ensure that port is in layer 2 mode
       nxos_interface:
         provider: "{{ creds }}"
-        interface: Ethernet1/5
-        description: 'Configured by Ansible'
+        interface: "{{ int }}"
+        description: "{{ des }}"
         mode: layer2
 
     - nxos_switchport:
         provider: "{{ creds }}"
         interface: eth1/5
         mode: access
-        access_vlan: 20
+        access_vlan: "{{ vlan }}"
       notify:
         - Save Config
     ```
