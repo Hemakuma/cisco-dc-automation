@@ -256,8 +256,8 @@ To get snippet
 Use nxos_facts module . Read more about it here  https://docs.ansible.com/ansible/nxos_facts_module.html
 
 1. Right click on `ansible` folder and select `New File`
-2. name it `ex-show-facts.yml`
-3. copy and past the following :
+2. Name it `ex-show-facts.yml`
+3. Copy and past the following :
 
    ```
    ---
@@ -277,31 +277,31 @@ Use nxos_facts module . Read more about it here  https://docs.ansible.com/ansibl
    ```
 
 5. Save the file `CMD + S`
-6. create jinja2 template to store the data
-6. Right click on the `templates` folder and create a new file. Name it `facts.j2`
-7. Add the following content to this file:
+6. Create jinja2 template to store the data
+   1. Right click on the `templates` folder and select `new file`. Name it `facts.j2`
+   2. Add the following content to this file:
 
-    ```
-    DEVICE: {{ inventory_hostname }}
+       ```
+       DEVICE: {{ inventory_hostname }}
 
-    Version:
-    {{ kickstart | to_nice_json }}
+       Version:
+       {{ kickstart | to_nice_json }}
 
-    Platform:
-    {{ platform | to_nice_json }}
+       Platform:
+       {{ platform | to_nice_json }}
 
-    vlan Info:
-    {{ vlan_list | to_nice_json }}
+       vlan Info:
+       {{ vlan_list | to_nice_json }}
 
-    Interfaces:
-    {{ interfaces_list | to_nice_json }}
+       Interfaces:
+       {{ interfaces_list | to_nice_json }}
 
-    Power Supply Info:
-    {{ power_supply_info | to_nice_json }}
+       Power Supply Info:
+       {{ power_supply_info | to_nice_json }}
 
-    Fan Info:
-    {{ fan_info | to_nice_json }}
-    ```
+       Fan Info:
+       {{ fan_info | to_nice_json }}
+       ```
 
 5. switch to ansible container and run the playbook
     1. `ansible-playbook -i hosts ex-show-facts.yml`
