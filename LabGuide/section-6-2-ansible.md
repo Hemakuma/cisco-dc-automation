@@ -616,7 +616,8 @@ https://docs.ansible.com/ansible/nxos_vlan_module.html
 2. Run the playbook
     1. `ansible-playbook -i hosts deploy-vlans.yml`
 3. Login into your switch.
-4. Verify that ansible has made those configuration.
+   4. Verify that ansible has made those configuration.
+   5. `show run vlan`
 
 
 
@@ -708,7 +709,7 @@ https://docs.ansible.com/ansible/nxos_template_module.html
 
 
 ### Exercise 5
-#### Create playbook to push host port configuration to the switch.
+#### Create playbook to push uplinks configuration to the switch.
 1. Navigate to `ansible` folder
 2. Right click and select `New File`. Name it `deploy-uplinks.yml`
 3. Copy and paste the following:
