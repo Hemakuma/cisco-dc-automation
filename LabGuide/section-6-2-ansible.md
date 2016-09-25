@@ -843,6 +843,13 @@ https://docs.ansible.com/ansible/nxos_switchport_module.html
 1. Configure a new server port on n9k-1 port eth1/3
 2. Remove all the openstack server ports
 
+### Excercise 7
+#### Push the changes to gitlab
+1. Open up a terminal window
+2. `cd ~/training/ansible`
+3. `./gitpush.sh`
+
+
 ## Ansible Tips
 ### How to see which ansible modules are installed?
 ansible-doc --list | egrep ^'nxos'

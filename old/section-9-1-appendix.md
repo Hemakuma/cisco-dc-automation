@@ -19,8 +19,6 @@ git push -u origin master
 8. Now for the lab, we will be using our locally installed gitlab server.  Once we have finished with the lab, we will push everything to github.  This will be your reference for later on.
 
 
-
-
 ##Manual way of creating containers
 
 ###Ansible

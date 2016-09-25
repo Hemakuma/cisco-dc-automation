@@ -29,11 +29,11 @@ Jenkins is an open source tool that is used for scheduling and running automated
 
 In the Server world, Jenkins can be used to perform the typical build server work, such as doing continuous/official/nightly builds, run tests, or perform some repetitive batch tasks.
 
-In the network world, we can use it to automatic push network configuration to network devices. This is little known application of Jenkins but we will be explore little bit deeper how we can use Jenkins to help with network automation.
+In the network world, we can use it to automatically deploy network configuration to network devices. This is little unknown application of Jenkins but we will be explore little bit deeper how we can use Jenkins to help with network automation.
 
 ### Exercise-1
 #### Update the hosts file
-1. Open another terminal window and navigate to training folder
+1. Open another terminal window and navigate to `training` folder
 2. source `source source.docker`
 3. Find out the ip address of your `nxosv` switch.  you can login into the switch and type `show ip int brief vrf  management`.  Note down the ip.
 4. Update the `/etc/hosts` files on the jenkins server  since we are not using dns. This will allow jenkins server to be able to resolve the names of our switches that are referenced inside the ansible playbook
@@ -53,26 +53,26 @@ In the network world, we can use it to automatic push network configuration to n
 
 ### Exercise-3
 #### Login into Jenkins Server
-6. Open up a chrome browser and login in. Use the ip you got in exercise 2.
-7. `http://<ip>:8080`
-8. type in the admin password that you copied previously.
+1. Open up a chrome browser and login in. Use the ip you got in exercise 2.
+2. `http://<ip>:8080`
+3. type in the admin password that you copied previously.
 
 	![jenkins](/images/jenkins-12.png)
-10. Click `Select plugins to install`. and select none (we will install plugins manually)
+4. Click `Select plugins to install`. and select none (we will install plugins manually)
 
 	![jenkins](/images/jenkins-200.png)
 
-11. Select none (we will install plugins manually)
+5. Select `none` (we will install plugins manually)
 
 	![jenkins](/images/jenkins-13.png)
 
-12. Click on `Install`
-13. Create a user account (yourid/cisco123)
+6. Click on `Install`
+7. Create a First user account (yourid/cisco123)
 
 	![jenkins](/images/jenkins-201.png)
 
-14. Click `Save and Finish`
-15. Click on `Start using Jenkins`
+8. Click `Save and Finish`
+9. Click on `Start using Jenkins`
 
 
 ### Exercise-4
@@ -158,8 +158,9 @@ Jenkins Job Builder takes simple descriptions of Jenkins jobs in YAML or JSON fo
 Note: jenkins will fetch the repo and store the contents  under `/var/jenkins_home/workspace/deploy-prod/` directory.
 10. Repeat step 9 above to play rest of the ansible playbooks.
    1. click on the `Add build step` again.
-   2. copy paste the same content as above but this time change th ansible playboot to point to `deploy-hostports`
-   3. Repeat for `deploy-vlans`
+   2. Select `Execute Shell`
+   2. copy paste the same content as above but this time change th ansible playbook to point to `deploy-hostports`
+   3. Repeat for `deploy-vlans.yml` and `deploy-uplinks.yml`
 10. Click on `Save`
 11. Click on `Build Now`
 
