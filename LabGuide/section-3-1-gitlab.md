@@ -424,6 +424,8 @@ Let ensure that we save our codes on git hub too.
 8. Switch to browser.
   9. Refresh. Do you see your files on github.
 
+Now when you push, it will update, both the gitlab and your backup at github.
+
 ### Exercise-2
 #### Adding multiple remotes to your nxtoolkit git repo
 1. Switch back to terminal window.
