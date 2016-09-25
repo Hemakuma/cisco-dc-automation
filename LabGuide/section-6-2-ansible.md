@@ -261,11 +261,11 @@ Use nxos_facts module . Read more about it here  https://docs.ansible.com/ansibl
 
    ```
    ---
-   - name: get facts
-     hosts: leafs
-     connection: local
-     gather_facts: no
-     tasks:
+   -  name: get facts
+      hosts: leafs
+      connection: local
+      gather_facts: no
+      tasks:
        - name: obtain login credentials
          include_vars: credentials.yml
 
@@ -273,7 +273,7 @@ Use nxos_facts module . Read more about it here  https://docs.ansible.com/ansibl
          nxos_facts:
            provider: "{{ creds }}"
 
-       - template: src=templates/facts.j2 dest=files/{{ inventory_hostname }}_facts.json
+   - template: src=templates/facts.j2 dest=files/{{ inventory_hostname }}_facts.json
    ```
 
 5. Save the file `CMD + S`
