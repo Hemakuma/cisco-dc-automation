@@ -531,7 +531,8 @@ Ensure following vlans are configured on all the switches.
 |10	| web|
 | 20 |	app|
 |30	|db|
-|40	|misc
+|40	|ESXI
+|60   | Openstack
 |99	|native-vlan
 
 
