@@ -2,13 +2,11 @@
 
  ----
 
-
 ## Introduction
 This lab is focusing on getting you started with the basic on nexus open-nxos  programmability.  We will install and use some of the common tools used by DevOPS engineers.  This lab will build the foundation for future advance labs.
 
 
 ![intro](/images/lab-2.png)
-
 
 
 1.1 Objective
