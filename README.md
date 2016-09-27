@@ -13,6 +13,7 @@ This lab is focusing on getting you started with the basic on nexus open-nxos  p
 
 To teach you how to program Nexus switches using varies tools/apps via RESTful API calls.  At the end of the day, each tool changes the managed object stored inside the data model.  In this lab we will be using CLI, REST Client, Python, nxtoolkit and ansible to make configuration changes to the switches.
 
+![intro](/images/intro-2.png)
 
 1.2 Lab Setup
 
