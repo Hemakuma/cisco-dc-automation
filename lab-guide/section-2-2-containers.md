@@ -161,7 +161,7 @@ You are now ready to do off box programming.
 
 ## Docker Tips
 If your boot2docker can not resolve dns entry?
-`docker-machine default ssh`
+`docker-machine ssh default`
 
 ```
 echo "nameserver 8.8.8.8" > /etc/resolv.conf && sudo /etc/init.d/docker restart

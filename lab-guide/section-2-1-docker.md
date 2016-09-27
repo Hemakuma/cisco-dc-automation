@@ -60,6 +60,8 @@ Docker-toolbox allows you to run docker on your laptop (both in mac or windows).
 
 ** Windows Users, please make sure you install docker toolkit using 'Administrator' account.  Right click on the file and select `Run as Administrator`**
 
+If you have a virtual box installed on your system, please remove it. Let docker tool box install the virutal box for you.
+
 Whenever we say open terminal in this lab guide, please open `Docker Quickstart` on windows.  
 
 **Do not open the command line**
