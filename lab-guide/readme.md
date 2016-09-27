@@ -18,13 +18,3 @@ If you have physical switches, you can use them too.
 Most of these tools can be installed on your laptop
 
 ![intro](/images/intro-20.png)
-
-
-##References:
-Programmability eBook
-http://www.cisco.com/c/dam/en/us/td/docs/switches/datacenter/nexus9000/sw/open_nxos/programmability/guide/Programmability_Open_NX-OS.pdf?utm_content=buffer49ea2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
-
-http://www.cisco.com/c/dam/en/us/td/docs/switches/datacenter/nexus9000/sw/open_nxos/programmability/guide/Programmability_Open_NX-OS.pdf
-
-Ansible modules:
-https://github.com/ansible/ansible-modules-core/tree/devel/network/nxos
