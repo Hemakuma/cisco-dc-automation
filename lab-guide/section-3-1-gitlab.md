@@ -103,9 +103,10 @@ For this lab, we have installed our own gitlab server on the docker container. W
 5. Modify the first line as follows. Add your username and password to the url ..hemakuma:cisco123@
 6. Do not copy and paste everything at once.  Do line by line.
 
+  ![gitlab](/images/gitlab-505.png)
+
   `git remote add origin http://hemakuma:cisco123@192.168.99.100/hemakuma/ansible.git`
 
-  ![gitlab](/images/gitlab-505.png)
 7. type ` git config -l`  and verify all the information you typed in is in the configuration file.
 
 ### Exercise-3
