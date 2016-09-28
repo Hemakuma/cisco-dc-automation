@@ -350,11 +350,12 @@ Ansible galaxy provides a very easy way to create the directory structure to hos
 
 1. Switch to 'ansible container' terminal window
    2. `cd roles`
-   3. type `ansible-galaxy init login`
-   4. type `ansible-galaxy init baseconfig`
-   5. type `ansible-galaxy init vlans`
-   6. type `ansible-galaxy init uplinks`
-   7. type `ansible-galaxy init hostports`
+   3. type
+      4. `ansible-galaxy init login`
+      4. `ansible-galaxy init baseconfig`
+      5.  `ansible-galaxy init vlans`
+      6. `ansible-galaxy init uplinks`
+      7. `ansible-galaxy init hostports`
 
 ### Exercise 2
 #### Configuring login roles

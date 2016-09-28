@@ -58,7 +58,7 @@ Lets create a REST request message to login into the nexus switch.  This will be
 6. method = `POST`
 7. url field type `http://<yourswitch ip>/api/aaaLogin.json`
 8. select the `Body` tab.
-7. make sure to select `JSON` for the payload. Enter the following json code. Adjust the name and password accordingly.
+7. Select raw and then make sure to select `JSON Application` for the payload. Enter the following json code. Adjust the name and password accordingly.
 
     ```
     {
