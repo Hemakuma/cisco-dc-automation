@@ -228,7 +228,9 @@ If you like the gitlab to notify Jenkins that something has changed in the repo 
 3. Switch to the chrome browser and open the `Jenkins` tab. Login in if you are logged out. Make sure you are on `deploy-prod` job.
 4. Now we going to push the changes to the git.  This time, Jenkins job should be trigger since we put a filter that it should only trigger `deploy-prod` job only on the changes of the `master` branch.
 5. Switch to the terminal window
-   6. `./gitpush.sh`
+   6. `git add .`
+   7. `git commit -m 'updated branch'`
+   7. `git push -u origin updatebase`
 6. Did Jenkins build the job?
 7. Now login to `gitlab` portal.
    8. you should see button for `Create Merge Request`.  Click on it.
