@@ -353,7 +353,7 @@ Ansible galaxy provides a very easy way to create the directory structure to hos
    3. type
       4. `ansible-galaxy init login`
       4. `ansible-galaxy init baseconfig`
-      5.  `ansible-galaxy init vlans`
+      5. `ansible-galaxy init vlans`
       6. `ansible-galaxy init uplinks`
       7. `ansible-galaxy init hostports`
 
@@ -646,8 +646,8 @@ In this section, we will be configuring uplink ports. This will include changing
 #### Uplinks configuration repository
 This role allows us to create configuration for uplinks on the switches. Since the config is per switch basis, we need to hold the variables in the `host_vars`. We need to create a folder for each host in `host_vars` folder.  Ansible will search this folder to look for the variables.
 
-1. Navigate to `ansible --> hosts_vars`
-2. Right click and select `New Folder`. Name it `n9k-1.yml`
+1. Navigate to `ansible --> host_vars`
+2. Right click and select `New File`. Name it `n9k-1.yml`
 3. copy and paste the following code.
 
     ```
