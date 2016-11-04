@@ -518,6 +518,7 @@ Lets say Server guys added a new `NTP server` which has ip of `192.200.0.2`. You
 ## Section-6-2-4: Automating VLAN provisioning
 **Problem Statement**
 Users perform manual Day-2 operations to configure network elements repeatedly for the purpose of on-boarding new workloads. One common category of Day-2 configuration activity is performing routine VLAN related operations:
+
 1. Check if VLAN exists
 2. Change names and descriptions of VLANs
 3. Configure a VLAN
