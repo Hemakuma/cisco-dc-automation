@@ -578,7 +578,7 @@ Lets update the vars directory with all our variables.
 4. Save the file `CMD + S`
 
 ### Exercise 3
-#### Create playbook tasks to configure the switch ports.
+#### Create playbook tasks to configure VLAN.
 This time, we are going to use `nxos_vlan` module to make these changes.  Read more about it here
 https://docs.ansible.com/ansible/nxos_vlan_module.html
 
