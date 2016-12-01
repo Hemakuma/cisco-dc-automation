@@ -55,7 +55,7 @@ If you installed VM Fusion with default settings, all your VMs will be located u
     serial0.startConnected = "TRUE"
     serial0.yieldOnMsrRead = "TRUE"
     ```
-    
+
 18. Start VMware Fusion
 19. Start NXOSv Machine.
     After few sec, you should see the following screen.  Wait until you see "Leaving grub land".  Your NXOS virtual switch is now up and running. To access it, you need to do initial configuration via serial connection.  (Not through the VM Console). ***You will not be able type anything in the KVM console.***
@@ -69,15 +69,19 @@ If you installed VM Fusion with default settings, all your VMs will be located u
 4. You should see the initial POAP boot screen. Set you admin password and do the initial configuration. (admin/cisco)  
  ![nxosv](/images/nxosv-v-11.png)  
 5. Provision the management interface.
+
     ```
     config t
     inter mgmt0
     ip addr dhcp
     ```
+
 5. Set the boot variable
+
     `boot nxos bootflash:xosv-final.7.0.3.I2.2e.bin`
 
 6. Enable feature features
+
     ```
     feature nxapi
     feature scp-server
