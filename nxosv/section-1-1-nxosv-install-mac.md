@@ -47,6 +47,7 @@ If you installed VM Fusion with default settings, all your VMs will be located u
 15. go to the end of the file..uses arrow keys
 16. press "i" to insert
 17. Add the following lines at the end of this file:
+
     ```
     serial0.present = "TRUE"
     serial0.fileType = "network"
@@ -54,6 +55,7 @@ If you installed VM Fusion with default settings, all your VMs will be located u
     serial0.startConnected = "TRUE"
     serial0.yieldOnMsrRead = "TRUE"
     ```
+    
 18. Start VMware Fusion
 19. Start NXOSv Machine.
     After few sec, you should see the following screen.  Wait until you see "Leaving grub land".  Your NXOS virtual switch is now up and running. To access it, you need to do initial configuration via serial connection.  (Not through the VM Console). ***You will not be able type anything in the KVM console.***

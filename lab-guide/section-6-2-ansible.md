@@ -598,7 +598,7 @@ https://docs.ansible.com/ansible/nxos_vlan_module.html
 
 
 ### Exercise 4
-#### Create playbook to push host port configuration to the switch.
+#### Create playbook to push vlan configuration to the switch.
 1. Navigate to `ansible` folder
 2. Right click and select `New File`. Name it `deploy-vlans.yml`
 3. Copy and paste the following:
