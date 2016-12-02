@@ -2,4 +2,4 @@
 
 ##NXOS Programmability Training
 
-### see lab guide for dtails
+### see lab guide for details.
